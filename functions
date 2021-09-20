@@ -27,7 +27,7 @@ function run_command () {
 
 function runner_html () {
   echo "Generating system stats please wait (can take a few minutes on slow systems)"
-  echo "File generated at ${ofile} on `hostname` at `date`"
+  echo "Report File generated at ${ofile} on `hostname` at $(date)"
   
   echo "<HTML><HEAD>
   <script language=\"javascript1.2\">
@@ -60,8 +60,8 @@ function runner_html () {
   </script>
   </HEAD>
   <BODY onload='collapseAll();'>">${ofile}
-  echo "<H1>Automatic System Information On: `hostname`</H1>">>${ofile}
-  echo "File generated on `date`">>${ofile}
+  echo "<H1>XaaS - CIS - AO - Automatic System Information On: `hostname`</H1>">>${ofile}
+  echo "Report Extract File generated on `date`">>${ofile}
   echo "<div style=\"border: dashed 1px #000; padding: 3px; margin: 3px;\">">>${ofile}
   
   echo "<ul id=\"root\">">>$ofile
