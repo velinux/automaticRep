@@ -1,0 +1,101 @@
+source $(pwd)/functions
+
+heading_start "Hardware"
+
+sub_start "Kernel"
+run_command "uname -r"
+sub_end
+
+sub_start "CPU"
+run_command "cat /proc/cpuinfo"
+sub_end
+
+sub_start "Motherboard/BIOS Details"
+run_command "[ -f /usr/sbin/dmidecode ] && sudo -v && echo -n 'Motherboard' && sudo /usr/sbin/dmidecode -t 1 | grep 'Manufacturer\|Product Name\|Serial Number' | tr -d '\t' | sed 's/Manufacturer//' && echo -ne '\nBIOS' && sudo /usr/sbin/dmidecode -t 0 | grep 'Vendor\|Version\|Release' | tr -d '\t' | sed 's/Vendor//'"
+sub_end
+
+sub_start "Loop Example"
+for i in {1..5}
+do
+   run_command echo "$i"
+done
+sub_end
+
+sub_start "Ethernet"
+run_command "lspci | grep Ethernet"
+sub_end
+
+sub_start "Interface"
+ifconfig | grep 'eth\|lo' | cut -c1-4 >interfaces.tmp
+while read line
+do
+run_command "ethtool $line "
+done <interfaces.tmp
+rm -f interfaces.tmp
+sub_end
+
+sub_start "File System"
+run_command "df -h"
+sub_end
+
+sub_start "FStab"
+run_command "cat /etc/fstab"
+sub_end
+
+sub_start "Interrupts"
+run_command "cat /proc/interrupts"
+sub_end
+
+sub_start "Hardware List"
+run_command "lshw -short"
+sub_end
+
+sub_start "Boot Errors"
+run_command "dmesg -n1"
+run_command "dmesg | grep -i error"
+sub_end
+
+heading_end
+
+heading_start "Network Config"
+
+sub_start "Interface Settings"
+run_command "ifconfig"
+sub_end
+
+sub_start "DNS Servers"
+run_command "cat /etc/resolv.conf | grep -i nameserver"
+sub_end
+
+sub_start "Route"
+run_command "route -n"
+
+sub_start "Hosts"
+run_command "cat /etc/hosts"
+sub_end
+
+heading_end
+
+heading_start "Server Status"
+
+sub_start "Processor/RAM Usage"
+run_command "top -b -n 1 | sed -n '1,20p'"
+sub_end
+
+sub_start "Running Processes"
+run_command "ps -eHf"
+sub_end
+
+sub_start "Running Services"
+run_command "service --status-all 2>>/dev/null | grep -e 'running\|cours' | grep -v 'not running'"
+sub_end
+
+sub_start "TCP Connections"
+run_command "netstat -vnpta"
+sub_end
+
+sub_start "TCP Statistics"
+run_command "netstat -st | head -n 27"
+sub_end
+
+heading_end

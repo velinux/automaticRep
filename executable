@@ -1,0 +1,166 @@
+source $(pwd)/functions
+source $(pwd)/vars/oracle.env
+
+heading_start "Hardware Information"
+
+sub_start "CPU"
+run_command "cat /proc/cpuinfo"
+sub_end
+
+sub_start "Ethernet"
+run_command "lspci | grep Ethernet"
+sub_end
+
+sub_start "Interface"
+ifconfig | grep 'eth\|lo' | cut -c1-4 >interfaces.tmp
+while read line
+do
+run_command "ethtool $line "
+done <interfaces.tmp
+rm -f interfaces.tmp
+sub_end
+
+heading_end
+
+heading_start "Software & Data System"
+
+sub_start "Server Name"
+run_command "hostname"
+sub_end
+
+sub_start "Kernel Version"
+run_command "uname -r"
+sub_end
+
+sub_start "Arquitecture"
+run_command "arch"
+sub_end
+
+sub_start "Release"
+run_command "cat /etc/os-release"
+sub_end
+
+sub_start "Memory"
+run_command "memory=`free -m | grep Mem | awk '{print $2}'` ; echo "Memory: \$memory";swap=`free -m | grep Swap | awk '{print $2}'`;echo "Swap: \$swap""
+sub_end
+
+sub_start "Mount Os File System"
+run_command "df -h"
+sub_end
+
+sub_start "File Conf Mount File System (FStab)"
+run_command "cat /etc/fstab"
+sub_end
+
+sub_start "File Limits General Conf"
+run_command "cat /etc/security/limits.conf"
+sub_end
+
+sub_start "Limits for ORACLE User"
+run_command "ulimit -a -u oracle"
+sub_end
+
+sub_start "Usuarios del Sistema"
+run_command "cat /etc/passwd"
+sub_end
+
+sub_start "Grupos del Sistema"
+run_command "cat /etc/group"
+sub_end
+
+sub_start "Hosts"
+run_command "cat /etc/hosts"
+sub_end
+
+sub_start "Latest Software Data"
+run_command "rpm -qa --last | awk '{print $1}'"
+sub_end
+
+sub_start "Kernel Parameters"
+run_command "cat /etc/sysctl.conf"
+sub_end
+
+heading_end
+
+heading_start "SQL Reports"
+
+sub_start "Size RBDMS Software"
+run_command "du -sh \$ORACLE_HOME"
+sub_end
+
+sub_start "Size RBDMS DB"
+run_command "sh sh/size_datafiles.sh; cat /tmp/size_datafiles.log"
+sub_end
+
+sub_start "Size RBDMS DB UNDO"
+run_command "sh sh/undo_datafiles.sh; cat /tmp/undo_datafiles.log"
+sub_end
+
+sub_start "Controlfiles"
+run_command "sh sh/controlfiles.sh; cat /tmp/controlfiles.log"
+sub_end
+
+sub_start "Info DB"
+run_command "sh sh/infodb.sh; cat /tmp/infodb.log"
+sub_end
+
+sub_start "File init.ora"
+run_command "cat \$ORACLE_HOME/dbs/init\$ORACLE_SID.ora"
+sub_end
+
+sub_start "Detail DataFiles"
+run_command "sh sh/datafiles.sh; cat /tmp/datafiles.log"
+sub_end
+
+
+sub_start "Tablespaces"
+run_command "sh sh/tbs.sh; cat /tmp/tbs.log"
+sub_end
+
+
+heading_end
+
+heading_start "Network Config"
+
+sub_start "Interface Settings"
+run_command "ifconfig"
+sub_end
+
+sub_start "DNS Servers"
+run_command "cat /etc/resolv.conf | grep -i nameserver"
+sub_end
+
+sub_start "Route"
+run_command "route -n"
+
+sub_start "Hosts"
+run_command "cat /etc/hosts"
+sub_end
+
+heading_end
+
+heading_start "Server Status"
+
+sub_start "Processor/RAM Usage"
+run_command "top -b -n 1 | sed -n '1,20p'"
+sub_end
+
+sub_start "Running Processes"
+run_command "ps -eHf"
+sub_end
+
+sub_start "Running Services"
+run_command "service --status-all 2>>/dev/null | grep -e 'running\|cours' | grep -v 'not running'"
+sub_end
+
+sub_start "TCP Connections"
+run_command "netstat -vnpta"
+sub_end
+
+sub_start "TCP Statistics"
+run_command "netstat -st | head -n 27"
+sub_end
+
+heading_end
+
+

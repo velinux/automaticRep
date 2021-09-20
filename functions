@@ -1,0 +1,80 @@
+#!/bin/bash
+
+executable=/$(pwd)/executable
+
+function heading_start () {
+	heading="$@"
+	echo "<li><a href=\"#\" onclick=\"toggleBullet(this)\">${heading}</a><ul>">>${ofile}
+}
+
+function sub_start () {
+	sub_heading="$@"
+	echo "<li><a href=\"#\" onclick=\"toggleBullet(this)\">${sub_heading}</a><ul><li><PRE>">>${ofile}
+}
+
+function sub_end () {
+	echo "</PRE></li></ul>">>${ofile}
+}
+
+function heading_end () {
+	echo "</ul></li>">>${ofile}
+}
+
+function run_command () {
+	cmd="$@"
+	bash -c "${cmd}" >>${ofile}
+}
+
+function runner_html () {
+  echo "Generating system stats please wait (can take a few minutes on slow systems)"
+  echo "File generated at ${ofile} on `hostname` at `date`"
+  
+  echo "<HTML><HEAD>
+  <script language=\"javascript1.2\">
+  function toggleBullet(elm) {
+   var newDisplay = \"none\";
+   var e = elm.nextSibling; 
+   while (e != null) {
+    if (e.tagName == \"UL\" || e.tagName == \"ul\") {
+     if (e.style.display == \"none\") newDisplay = \"block\";
+     break;
+    }
+    e = e.nextSibling;
+   }
+   while (e != null) {
+    if (e.tagName == \"UL\" || e.tagName == \"ul\") e.style.display = newDisplay;
+    e = e.nextSibling;
+   }
+  }
+  
+  function collapseAll() {
+    var lists = document.getElementsByTagName('UL');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = \"none\";
+    lists = document.getElementsByTagName('ul');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = \"none\";
+    var e = document.getElementById(\"root\");
+    e.style.display = \"block\";
+  }
+  </script>
+  </HEAD>
+  <BODY onload='collapseAll();'>">${ofile}
+  echo "<H1>Automatic System Information On: `hostname`</H1>">>${ofile}
+  echo "File generated on `date`">>${ofile}
+  echo "<div style=\"border: dashed 1px #000; padding: 3px; margin: 3px;\">">>${ofile}
+  
+  echo "<ul id=\"root\">">>$ofile
+  
+  dd if=${txt_cmds} of=${executable} && chmod +x ${executable}
+  /bin/bash ${executable}
+  
+  echo "</ul></DIV></BODY></HTML>">>${ofile}
+  
+  echo "Finished...100%, open up the file in your favourite web browser"
+  exit 0
+}
+
+function runner_html_test () {
+  echo ${ofile} >> ${ofile}
+}

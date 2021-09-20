@@ -1,0 +1,10 @@
+source $(pwd)/functions
+
+heading_start "Example"
+  sub_start "DNS Servers"
+    run_command "cat /etc/resolv.conf | grep -i nameserver"
+  sub_end
+  sub_start "Hostname"
+    run_command "hostname"
+  sub_end
+heading_end

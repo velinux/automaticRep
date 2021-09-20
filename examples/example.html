@@ -1,0 +1,472 @@
+<HTML><HEAD>
+  <script language="javascript1.2">
+  function toggleBullet(elm) {
+   var newDisplay = "none";
+   var e = elm.nextSibling; 
+   while (e != null) {
+    if (e.tagName == "UL" || e.tagName == "ul") {
+     if (e.style.display == "none") newDisplay = "block";
+     break;
+    }
+    e = e.nextSibling;
+   }
+   while (e != null) {
+    if (e.tagName == "UL" || e.tagName == "ul") e.style.display = newDisplay;
+    e = e.nextSibling;
+   }
+  }
+  
+  function collapseAll() {
+    var lists = document.getElementsByTagName('UL');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = "none";
+    lists = document.getElementsByTagName('ul');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = "none";
+    var e = document.getElementById("root");
+    e.style.display = "block";
+  }
+  </script>
+  </HEAD>
+  <BODY onload='collapseAll();'>
+<H1>System Information</H1>
+File generated on Sun Dec 18 07:56:16 UTC 2016
+<div style="border: dashed 1px #000; padding: 3px; margin: 3px;">
+<ul id="root">
+<li><a href="#" onclick="toggleBullet(this)">Hardware</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Kernel</a><ul><li><PRE>
+4.2.0-c9
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">CPU</a><ul><li><PRE>
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2500.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm fsgsbase tsc_adjust smep erms xsaveopt
+bugs		:
+bogomips	: 5000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Motherboard/BIOS Details</a><ul><li><PRE>
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Loop Example</a><ul><li><PRE>
+1
+2
+3
+4
+5
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Ethernet</a><ul><li><PRE>
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Interface</a><ul><li><PRE>
+Settings for eth0:
+	Supported ports: [ ]
+	Supported link modes:   Not reported
+	Supported pause frame use: No
+	Supports auto-negotiation: No
+	Advertised link modes:  Not reported
+	Advertised pause frame use: No
+	Advertised auto-negotiation: No
+	Speed: 10000Mb/s
+	Duplex: Full
+	Port: Twisted Pair
+	PHYAD: 0
+	Transceiver: internal
+	Auto-negotiation: off
+	MDI-X: Unknown
+	Link detected: yes
+Settings for lo:
+	Link detected: yes
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">File System</a><ul><li><PRE>
+Filesystem                Size  Used Avail Use% Mounted on
+none                      2.2G   47M  2.0G   3% /
+tmpfs                      26G     0   26G   0% /dev
+tmpfs                      26G     0   26G   0% /sys/fs/cgroup
+/dev/mapper/volg1-lvdata  1.2T  780G  402G  67% /nix
+shm                        64M     0   64M   0% /dev/shm
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">FStab</a><ul><li><PRE>
+# UNCONFIGURED FSTAB FOR BASE SYSTEM
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Interrupts</a><ul><li><PRE>
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+  0:         49          0          0          0          0          0          0          0   IO-APIC   0-edge      timer
+  1:          9          0          0          0          0          0          0          0   IO-APIC   1-edge      i8042
+  4:         25          0          0          0          0          0          0          0   IO-APIC   4-edge      serial
+  8:          0          0          0          0          0          0          0          0   IO-APIC   8-edge      rtc0
+  9:          0          0          0          0          0          0          0          0   IO-APIC   9-fasteoi   acpi
+ 12:        154          0          0          0          0          0          0          0   IO-APIC  12-edge      i8042
+ 24:          0          0          0          0          0          0          0          0   PCI-MSI 65536-edge      virtio1-config
+ 25:   21695557          0          0          0          0          0          0          0   PCI-MSI 65537-edge      virtio1-input.0
+ 26:          1          0          0          0          0          0          0          0   PCI-MSI 65538-edge      virtio1-output.0
+ 27:          1   22050923          0          0          0          0          0          0   PCI-MSI 65539-edge      virtio1-input.1
+ 28:          1          0          0          0          0          0          0          0   PCI-MSI 65540-edge      virtio1-output.1
+ 29:          1          0   23957827          0          0          0          0          0   PCI-MSI 65541-edge      virtio1-input.2
+ 30:          1          0          0          0          0          0          0          0   PCI-MSI 65542-edge      virtio1-output.2
+ 31:          1          0          0   21858130          0          0          0          0   PCI-MSI 65543-edge      virtio1-input.3
+ 32:          1          0          0          0          0          0          0          0   PCI-MSI 65544-edge      virtio1-output.3
+ 33:          1          0          0          0   21163323          0          0          0   PCI-MSI 65545-edge      virtio1-input.4
+ 34:          1          0          0          0          0          0          0          0   PCI-MSI 65546-edge      virtio1-output.4
+ 35:          1          0          0          0          0   21973470          0          0   PCI-MSI 65547-edge      virtio1-input.5
+ 36:          1          0          0          0          0          0          0          0   PCI-MSI 65548-edge      virtio1-output.5
+ 37:          1          0          0          0          0          0   21412487          0   PCI-MSI 65549-edge      virtio1-input.6
+ 38:          1          0          0          0          0          0          0          0   PCI-MSI 65550-edge      virtio1-output.6
+ 39:          1          0          0          0          0          0          0   20978740   PCI-MSI 65551-edge      virtio1-input.7
+ 40:          1          0          0          0          0          0          0          1   PCI-MSI 65552-edge      virtio1-output.7
+ 41:          0          0          0          0          0          0          0          0   PCI-MSI 49152-edge      virtio0-config
+ 42:          0          0          0          0          0          0          0          0   PCI-MSI 49153-edge      virtio0-control
+ 43:          0          0          0          0          0          0          0          0   PCI-MSI 49154-edge      virtio0-event
+ 44:   81229754          0          0          0          0          0          0          0   PCI-MSI 49155-edge      virtio0-request
+NMI:          0          0          0          0          0          0          0          0   Non-maskable interrupts
+LOC:  392379442  266914249  399847342  269842612  401098832  269513862  403469673  270369492   Local timer interrupts
+SPU:          0          0          0          0          0          0          0          0   Spurious interrupts
+PMI:          0          0          0          0          0          0          0          0   Performance monitoring interrupts
+IWI:         33         77         28         72         37         73         31         68   IRQ work interrupts
+RTR:          0          0          0          0          0          0          0          0   APIC ICR read retries
+RES:  414241488  332551196  421623379  330331227  416538919  328875104  413193014  327549418   Rescheduling interrupts
+CAL:     407063     443465     439787     456816     450247     464934     454697     462086   Function call interrupts
+TLB:   22200989   22610679   18606668   22053182   17639037   21855221   17168849   21832394   TLB shootdowns
+TRM:          0          0          0          0          0          0          0          0   Thermal event interrupts
+THR:          0          0          0          0          0          0          0          0   Threshold APIC interrupts
+DFR:          0          0          0          0          0          0          0          0   Deferred Error APIC interrupts
+MCE:          0          0          0          0          0          0          0          0   Machine check exceptions
+MCP:       2179       2179       2179       2179       2179       2179       2179       2179   Machine check polls
+HYP:          0          0          0          0          0          0          0          0   Hypervisor callback interrupts
+ERR:          0
+MIS:          0
+PIN:          0          0          0          0          0          0          0          0   Posted-interrupt notification event
+PIW:          0          0          0          0          0          0          0          0   Posted-interrupt wakeup event
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Hardware List</a><ul><li><PRE>
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Boot Errors</a><ul><li><PRE>
+</PRE></li></ul>
+</ul></li>
+<li><a href="#" onclick="toggleBullet(this)">Network Config</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Interface Settings</a><ul><li><PRE>
+eth0      Link encap:Ethernet  HWaddr 02:42:ac:11:00:42  
+          inet addr:172.17.0.66  Bcast:0.0.0.0  Mask:255.255.0.0
+          inet6 addr: fe80::42:acff:fe11:42/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1460  Metric:1
+          RX packets:73289 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:57556 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:53255718 (53.2 MB)  TX bytes:12258272 (12.2 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">DNS Servers</a><ul><li><PRE>
+nameserver 172.17.0.1
+nameserver 169.254.169.254
+nameserver 8.8.8.8
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Route</a><ul><li><PRE>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         172.17.0.1      0.0.0.0         UG    0      0        0 eth0
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 eth0
+<li><a href="#" onclick="toggleBullet(this)">Hosts</a><ul><li><PRE>
+172.17.0.66     jrosco-linux-sysinfo-4169153
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+</PRE></li></ul>
+</ul></li>
+<li><a href="#" onclick="toggleBullet(this)">Server Status</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Processor/RAM Usage</a><ul><li><PRE>
+top - 07:56:17 up 7 days, 13:34,  0 users,  load average: 2.27, 2.64, 2.65
+Tasks:  15 total,   1 running,  14 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.1 us, 11.2 sy,  0.2 ni, 72.8 id,  1.4 wa,  0.0 hi,  0.4 si,  0.0 st
+KiB Mem:  53595536 total, 48395832 used,  5199704 free,  4182900 buffers
+KiB Swap: 52428796 total,   704280 used, 51724516 free. 17729536 cached Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+      1 root      20   0    4056   1104   1028 S   0.0  0.0   0:00.04 micro-inetd
+  21636 root      20   0   19380   2148   1956 S   0.0  0.0   0:03.12 dropbear
+  21637 ubuntu    20   0 1286112  51028  16272 S   0.0  0.1   0:26.18 vfs-worker {"pi
+  24252 ubuntu    20   0  123740   2688   2492 S   0.0  0.0   0:00.00 tmux
+  24255 ubuntu    20   0  132792   3812   2956 S   0.0  0.0   0:00.53 tmux
+  24256 ubuntu    20   0   11260   2656   2472 S   0.0  0.0   0:00.00 bash
+  24257 ubuntu    20   0   29120  12896   3172 S   0.0  0.0   0:00.21 bash
+  24748 ubuntu    20   0  123740   2688   2492 S   0.0  0.0   0:00.00 tmux
+  24750 ubuntu    20   0   11260   2704   2520 S   0.0  0.0   0:00.00 bash
+  24751 ubuntu    20   0   29076  13028   3328 S   0.0  0.0   0:00.76 bash
+  28041 ubuntu    20   0   11320   2976   2660 S   0.0  0.0   0:00.00 sysinfo.sh
+  28048 ubuntu    20   0   11316   2996   2684 S   0.0  0.0   0:00.00 bash
+  28082 ubuntu    20   0   11268   2600   2412 S   0.0  0.0   0:00.00 bash
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Running Processes</a><ul><li><PRE>
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 02:05 ?        00:00:00 /mnt/shared/sbin/micro-inetd 22 /mnt/shared/sbin/dropbear -i -s -m -R
+root       21636       1  0 05:22 ?        00:00:03   /mnt/shared/sbin/dropbear -i -s -m -R
+ubuntu     21637   21636  0 05:22 ?        00:00:26     vfs-worker {"pingInterval":5000,"nodePath":"/mnt/shared/lib/node_modules","tmuxBin":"/mnt/shared/sbin/tmux","root":"/","debug":true,"connectionTimeout":60000,"sshConnectTimeout":30000,"metapath":"/.c9/metadata","wsmetapath":"/.c9/metadata/workspace","projectDir":"/home/ubuntu/workspace","extendApi":{"collab":{"file":"c9.ide.collab/server/collab-server.js","user":{"uid":423366,"email":"jrosco@users.noreply.github.com","name":"jrosco","fullname":"Joel Cumberland"},"project":{"pid":4169153,"name":"linux-sysinfo"},"readonly":false,"nodePath":"/mnt/shared/lib/node_modules"},"pubsub":{"file":"c9.ide.pubsub/pubsub-service.js"},"ping":{"file":"c9.vfs.client/ping-service.js"}},"defaultEnv":{}}                                              
+ubuntu     24252   21637  0 06:04 pts/0    00:00:00       /mnt/shared/sbin/tmux -u2 -L cloud92.2 new -s jrosco@linux-sysinfo_11 export ISOUTPUTPANE=0;bash -l ; set -q -g status off ; set -q destroy-unattached off ; set -q mouse-select-pane on ; set -q set-titles on ; set -q quiet on ; set -q -g prefix C-b ; set -q -g default-terminal xterm-256color ; setw -q -g xterm-keys on
+ubuntu     24748   21637  0 06:05 pts/2    00:00:00       /mnt/shared/sbin/tmux -u2 -L cloud92.2 new -s jrosco@linux-sysinfo_411 export ISOUTPUTPANE=0;bash -l ; set -q -g status off ; set -q destroy-unattached off ; set -q mouse-select-pane on ; set -q set-titles on ; set -q quiet on ; set -q -g prefix C-b ; set -q -g default-terminal xterm-256color ; setw -q -g xterm-keys on
+ubuntu     24255       1  0 06:04 ?        00:00:00   /mnt/shared/sbin/tmux -u2 -L cloud92.2 new -s jrosco@linux-sysinfo_11 export ISOUTPUTPANE=0;bash -l ; set -q -g status off ; set -q destroy-unattached off ; set -q mouse-select-pane on ; set -q set-titles on ; set -q quiet on ; set -q -g prefix C-b ; set -q -g default-terminal xterm-256color ; setw -q -g xterm-keys on
+ubuntu     24256   24255  0 06:04 pts/1    00:00:00     bash -c export ISOUTPUTPANE=0;bash -l
+ubuntu     24257   24256  0 06:04 pts/1    00:00:00       bash -l
+ubuntu     24750   24255  0 06:05 pts/3    00:00:00     bash -c export ISOUTPUTPANE=0;bash -l
+ubuntu     24751   24750  0 06:05 pts/3    00:00:00       bash -l
+ubuntu     28041   24751  0 07:56 pts/3    00:00:00         /bin/bash ./sysinfo.sh -c example/commands_list1 -o example/example.html
+ubuntu     28048   28041  0 07:56 pts/3    00:00:00           /bin/bash //home/ubuntu/workspace/executable
+ubuntu     28085   28048  0 07:56 pts/3    00:00:00             ps -eHf
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Running Services</a><ul><li><PRE>
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">TCP Connections</a><ul><li><PRE>
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp6       0      0 :::22                   :::*                    LISTEN      -               
+tcp6       0      0 172.17.0.66:22          10.240.0.67:33170       ESTABLISHED -               
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">TCP Statistics</a><ul><li><PRE>
+Tcp:
+    2058 active connections openings
+    31 passive connection openings
+    0 failed connection attempts
+    4 connection resets received
+    1 connections established
+    71908 segments received
+    58468 segments send out
+    1 segments retransmited
+    0 bad segments received.
+    0 resets sent
+UdpLite:
+TcpExt:
+    27 TCP sockets finished time wait in fast timer
+    687 delayed acks sent
+    2 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 10 times
+    14528 packet headers predicted
+    4523 acknowledgments not containing data payload received
+    28813 predicted acknowledgments
+    TCPLossProbes: 1
+    10 DSACKs sent for old packets
+    TCPRcvCoalesce: 13588
+    TCPOFOQueue: 11
+    TCPAutoCorking: 121
+    TCPOrigDataSent: 35110
+    TCPHystartTrainDetect: 2
+</PRE></li></ul>
+</ul></li>
+</ul></DIV></BODY></HTML>

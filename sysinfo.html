@@ -1,0 +1,2033 @@
+<HTML><HEAD>
+  <script language="javascript1.2">
+  function toggleBullet(elm) {
+   var newDisplay = "none";
+   var e = elm.nextSibling; 
+   while (e != null) {
+    if (e.tagName == "UL" || e.tagName == "ul") {
+     if (e.style.display == "none") newDisplay = "block";
+     break;
+    }
+    e = e.nextSibling;
+   }
+   while (e != null) {
+    if (e.tagName == "UL" || e.tagName == "ul") e.style.display = newDisplay;
+    e = e.nextSibling;
+   }
+  }
+  
+  function collapseAll() {
+    var lists = document.getElementsByTagName('UL');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = "none";
+    lists = document.getElementsByTagName('ul');
+    for (var j = 0; j < lists.length; j++) 
+     lists[j].style.display = "none";
+    var e = document.getElementById("root");
+    e.style.display = "block";
+  }
+  </script>
+  </HEAD>
+  <BODY onload='collapseAll();'>
+<H1>Automatic System Information On: appspreprod</H1>
+File generated on Mon Sep 13 23:50:10 CDT 2021
+<div style="border: dashed 1px #000; padding: 3px; margin: 3px;">
+<ul id="root">
+<li><a href="#" onclick="toggleBullet(this)">Hardware Information</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">CPU</a><ul><li><PRE>
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel Xeon E312xx (Sandy Bridge)
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2397.222
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm constant_tsc nopl cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm pti xsaveopt
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 4794.44
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel Xeon E312xx (Sandy Bridge)
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2397.222
+cache size	: 4096 KB
+physical id	: 1
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm constant_tsc nopl cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm pti xsaveopt
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 4794.44
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel Xeon E312xx (Sandy Bridge)
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2397.222
+cache size	: 4096 KB
+physical id	: 2
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm constant_tsc nopl cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm pti xsaveopt
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 4794.44
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel Xeon E312xx (Sandy Bridge)
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2397.222
+cache size	: 4096 KB
+physical id	: 3
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm constant_tsc nopl cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm pti xsaveopt
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 4794.44
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Ethernet</a><ul><li><PRE>
+00:03.0 Ethernet controller: Red Hat, Inc. Virtio network device
+00:04.0 Ethernet controller: Red Hat, Inc. Virtio network device
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Interface</a><ul><li><PRE>
+Settings for eth0:
+	Supported ports: [ ]
+	Supported link modes:   Not reported
+	Supported pause frame use: No
+	Supports auto-negotiation: No
+	Supported FEC modes: Not reported
+	Advertised link modes:  Not reported
+	Advertised pause frame use: No
+	Advertised auto-negotiation: No
+	Advertised FEC modes: Not reported
+	Speed: Unknown!
+	Duplex: Unknown! (255)
+	Port: Other
+	PHYAD: 0
+	Transceiver: internal
+	Auto-negotiation: off
+	Link detected: yes
+Settings for eth1:
+	Supported ports: [ ]
+	Supported link modes:   Not reported
+	Supported pause frame use: No
+	Supports auto-negotiation: No
+	Supported FEC modes: Not reported
+	Advertised link modes:  Not reported
+	Advertised pause frame use: No
+	Advertised auto-negotiation: No
+	Advertised FEC modes: Not reported
+	Speed: Unknown!
+	Duplex: Unknown! (255)
+	Port: Other
+	PHYAD: 0
+	Transceiver: internal
+	Auto-negotiation: off
+	Link detected: yes
+Settings for lo::
+	Link detected: yes
+</PRE></li></ul>
+</ul></li>
+<li><a href="#" onclick="toggleBullet(this)">Software & Data System</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Server Name</a><ul><li><PRE>
+appspreprod
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Kernel Version</a><ul><li><PRE>
+4.14.35-1902.10.7.el7uek.x86_64
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Arquitecture</a><ul><li><PRE>
+x86_64
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Release</a><ul><li><PRE>
+NAME="Oracle Linux Server"
+VERSION="7.7"
+ID="ol"
+ID_LIKE="fedora"
+VARIANT="Server"
+VARIANT_ID="server"
+VERSION_ID="7.7"
+PRETTY_NAME="Oracle Linux Server 7.7"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:oracle:linux:7:7:server"
+HOME_URL="https://linux.oracle.com/"
+BUG_REPORT_URL="https://bugzilla.oracle.com/"
+
+ORACLE_BUGZILLA_PRODUCT="Oracle Linux 7"
+ORACLE_BUGZILLA_PRODUCT_VERSION=7.7
+ORACLE_SUPPORT_PRODUCT="Oracle Linux"
+ORACLE_SUPPORT_PRODUCT_VERSION=7.7
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Memory</a><ul><li><PRE>
+Memory: 16027
+Swap: 5119
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Mount Os File System</a><ul><li><PRE>
+Filesystem                  Size  Used Avail Use% Mounted on
+devtmpfs                    7.9G     0  7.9G   0% /dev
+tmpfs                       7.9G   13M  7.9G   1% /dev/shm
+tmpfs                       7.9G  835M  7.1G  11% /run
+tmpfs                       7.9G     0  7.9G   0% /sys/fs/cgroup
+/dev/mapper/ol_apexqa-root   44G  5.8G   39G  14% /
+/dev/vda1                  1014M  314M  701M  31% /boot
+/dev/mapper/apex-dataQA     100G   87G   14G  87% /u01
+tmpfs                       1.6G     0  1.6G   0% /run/user/54322
+192.168.2.67:/resProd       5.0T  2.4T  2.4T  51% /resProduccion
+tmpfs                       1.6G     0  1.6G   0% /run/user/0
+tmpfs                       1.6G     0  1.6G   0% /run/user/54323
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">File Conf Mount File System (FStab)</a><ul><li><PRE>
+
+#
+# /etc/fstab
+# Created by anaconda on Sun Jan 19 21:52:36 2020
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/ol_apexqa-root /                       xfs     defaults        0 0
+UUID=1e56c2fd-7058-47c3-bd1d-13fcfa517c35 /boot                   xfs     defaults        0 0
+/dev/mapper/ol_apexqa-swap swap                    swap    defaults        0 0
+/dev/mapper/apex-dataQA	/u01	xfs	defaults	0 0
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">File Limits General Conf</a><ul><li><PRE>
+# /etc/security/limits.conf
+#
+#This file sets the resource limits for the users logged in via PAM.
+#It does not affect resource limits of the system services.
+#
+#Also note that configuration files in /etc/security/limits.d directory,
+#which are read in alphabetical order, override the settings in this
+#file in case the domain is the same or more specific.
+#That means for example that setting a limit for wildcard domain here
+#can be overriden with a wildcard setting in a config file in the
+#subdirectory, but a user specific setting here can be overriden only
+#with a user specific setting in the subdirectory.
+#
+#Each line describes a limit for a user in the form:
+#
+#<domain>        <type>  <item>  <value>
+#
+#Where:
+#<domain> can be:
+#        - a user name
+#        - a group name, with @group syntax
+#        - the wildcard *, for default entry
+#        - the wildcard %, can be also used with %group syntax,
+#                 for maxlogin limit
+#
+#<type> can have the two values:
+#        - "soft" for enforcing the soft limits
+#        - "hard" for enforcing hard limits
+#
+#<item> can be one of the following:
+#        - core - limits the core file size (KB)
+#        - data - max data size (KB)
+#        - fsize - maximum filesize (KB)
+#        - memlock - max locked-in-memory address space (KB)
+#        - nofile - max number of open file descriptors
+#        - rss - max resident set size (KB)
+#        - stack - max stack size (KB)
+#        - cpu - max CPU time (MIN)
+#        - nproc - max number of processes
+#        - as - address space limit (KB)
+#        - maxlogins - max number of logins for this user
+#        - maxsyslogins - max number of logins on the system
+#        - priority - the priority to run user process with
+#        - locks - max number of file locks the user can hold
+#        - sigpending - max number of pending signals
+#        - msgqueue - max memory used by POSIX message queues (bytes)
+#        - nice - max nice priority allowed to raise to values: [-20, 19]
+#        - rtprio - max realtime priority
+#
+#<domain>      <type>  <item>         <value>
+#
+
+#*               soft    core            0
+#*               hard    rss             10000
+#@student        hard    nproc           20
+#@faculty        soft    nproc           20
+#@faculty        hard    nproc           50
+#ftp             hard    nproc           0
+#@student        -       maxlogins       4
+
+# End of file
+oracle   soft   nofile    1024
+oracle   hard   nofile    65536
+oracle   soft   nproc    16384
+oracle   hard   nproc    16384
+oracle   soft   stack    10240
+oracle   hard   stack    32768
+oracle   hard   memlock    134217728
+oracle   soft   memlock    134217728
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Limits for ORACLE User</a><ul><li><PRE>
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 63998
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 63998
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Usuarios del Sistema</a><ul><li><PRE>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:999:998:User for polkitd:/:/sbin/nologin
+libstoragemgmt:x:998:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:997:995::/var/lib/chrony:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+oracle:x:54321:54321::/home/oracle:/bin/bash
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+operaciones:x:54322:54323::/home/operaciones:/bin/bash
+opc:x:54323:54324::/home/opc:/bin/bash
+seguridad:x:54324:54325::/home/seguridad:/bin/bash
+nagios:x:996:994::/var/spool/nagios:/sbin/nologin
+nrpe:x:995:993:NRPE user for the NRPE service:/var/run/nrpe:/sbin/nologin
+rbarrera:x:54325:54326::/home/rbarrera:/bin/bash
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Grupos del Sistema</a><ul><li><PRE>
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:
+cdrom:x:11:
+mail:x:12:postfix
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+nobody:x:99:
+users:x:100:
+utmp:x:22:
+utempter:x:35:
+input:x:999:
+systemd-journal:x:190:
+systemd-network:x:192:
+dbus:x:81:
+polkitd:x:998:
+libstoragemgmt:x:997:
+ssh_keys:x:996:
+abrt:x:173:
+rpc:x:32:
+sshd:x:74:
+slocate:x:21:
+postdrop:x:90:
+postfix:x:89:
+chrony:x:995:
+ntp:x:38:
+tcpdump:x:72:
+stapusr:x:156:
+stapsys:x:157:
+stapdev:x:158:
+apache:x:48:
+rpcuser:x:29:
+nfsnobody:x:65534:
+oinstall:x:54321:
+dba:x:54322:oracle
+tss:x:59:
+operaciones:x:54323:
+opc:x:54324:
+seguridad:x:54325:
+screen:x:84:
+nagios:x:994:nrpe,apache
+nrpe:x:993:
+rbarrera:x:54326:
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Hosts</a><ul><li><PRE>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.1.41 appspreprod appspreprod.i-condor.com apexqa apexqa.i-condor.com
+#192.168.1.41 apexqa apexqa.i-condor.com apppreprod.i-condor.com
+#192.168.1.11 apexqa apexqa.i-condor.com
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Latest Software Data</a><ul><li><PRE>
+git-1.8.3.1-23.el7_8.x86_64                   Mon 13 Sep 2021 11:40:21 PM CDT
+perl-TermReadKey-2.30-20.el7.x86_64           Mon 13 Sep 2021 11:40:19 PM CDT
+perl-Git-1.8.3.1-23.el7_8.noarch              Mon 13 Sep 2021 11:40:19 PM CDT
+perl-Error-0.17020-2.el7.noarch               Mon 13 Sep 2021 11:40:19 PM CDT
+python3-pip-9.0.3-8.el7.noarch                Fri 09 Jul 2021 11:31:01 AM CDT
+python3-3.6.8-18.0.3.el7.x86_64               Fri 09 Jul 2021 11:30:56 AM CDT
+python3-libs-3.6.8-18.0.3.el7.x86_64          Fri 09 Jul 2021 11:30:54 AM CDT
+python3-setuptools-39.2.0-10.el7.noarch       Fri 09 Jul 2021 11:30:48 AM CDT
+perl-XML-XPath-1.13-22.el7.noarch             Tue 01 Jun 2021 08:45:58 PM CDT
+perl-XML-Parser-2.41-10.0.1.el7.x86_64        Tue 01 Jun 2021 08:45:57 PM CDT
+perl-libwww-perl-6.05-2.el7.noarch            Tue 01 Jun 2021 08:45:57 PM CDT
+perl-Net-HTTP-6.06-2.el7.noarch               Tue 01 Jun 2021 08:45:56 PM CDT
+perl-HTTP-Daemon-6.01-8.el7.noarch            Tue 01 Jun 2021 08:45:56 PM CDT
+perl-HTTP-Negotiate-6.01-5.el7.noarch         Tue 01 Jun 2021 08:45:55 PM CDT
+perl-HTML-Parser-3.71-4.el7.x86_64            Tue 01 Jun 2021 08:45:55 PM CDT
+perl-HTTP-Cookies-6.01-5.el7.noarch           Tue 01 Jun 2021 08:45:54 PM CDT
+perl-IO-Compress-2.061-2.el7.noarch           Tue 01 Jun 2021 08:45:53 PM CDT
+perl-HTTP-Message-6.06-6.el7.noarch           Tue 01 Jun 2021 08:45:53 PM CDT
+perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64    Tue 01 Jun 2021 08:45:52 PM CDT
+perl-Mozilla-CA-20130114-5.el7.noarch         Tue 01 Jun 2021 08:45:51 PM CDT
+perl-IO-Socket-SSL-1.94-7.el7.noarch          Tue 01 Jun 2021 08:45:51 PM CDT
+perl-Net-SSLeay-1.55-6.el7.x86_64             Tue 01 Jun 2021 08:45:50 PM CDT
+perl-WWW-RobotRules-6.02-5.el7.noarch         Tue 01 Jun 2021 08:45:49 PM CDT
+perl-URI-1.60-9.el7.noarch                    Tue 01 Jun 2021 08:45:49 PM CDT
+perl-Business-ISBN-Data-20120719.001-2.el7.noarch Tue 01 Jun 2021 08:45:48 PM CDT
+perl-Business-ISBN-2.06-2.el7.noarch          Tue 01 Jun 2021 08:45:48 PM CDT
+perl-IO-HTML-1.00-2.el7.noarch                Tue 01 Jun 2021 08:45:47 PM CDT
+perl-File-Listing-6.04-7.el7.noarch           Tue 01 Jun 2021 08:45:47 PM CDT
+perl-TimeDate-2.30-2.el7.noarch               Tue 01 Jun 2021 08:45:46 PM CDT
+perl-HTTP-Date-6.02-8.el7.noarch              Tue 01 Jun 2021 08:45:46 PM CDT
+perl-Net-LibIDN-0.12-15.el7.x86_64            Tue 01 Jun 2021 08:45:45 PM CDT
+perl-Digest-MD5-2.52-3.el7.x86_64             Tue 01 Jun 2021 08:45:44 PM CDT
+perl-Digest-1.17-245.el7.noarch               Tue 01 Jun 2021 08:45:44 PM CDT
+perl-HTML-Tagset-3.20-15.el7.noarch           Tue 01 Jun 2021 08:45:43 PM CDT
+perl-Encode-Locale-1.03-5.el7.noarch          Tue 01 Jun 2021 08:45:43 PM CDT
+perl-IO-Socket-IP-0.21-5.el7.noarch           Tue 01 Jun 2021 08:45:42 PM CDT
+perl-Data-Dumper-2.145-3.el7.x86_64           Tue 01 Jun 2021 08:45:42 PM CDT
+perl-LWP-MediaTypes-6.02-2.el7.noarch         Tue 01 Jun 2021 08:45:41 PM CDT
+perl-Compress-Raw-Zlib-2.061-4.el7.x86_64     Tue 01 Jun 2021 08:45:40 PM CDT
+nagios-plugins-wave-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-time-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-tcp-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-smtp-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-rpc-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-real-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-ping-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:26 PM CST
+nagios-plugins-ups-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:27:25 PM CST
+nagios-plugins-sensors-2.3.3-2.el7.x86_64     Wed 03 Feb 2021 03:27:25 PM CST
+nagios-plugins-procs-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:27:25 PM CST
+nagios-plugins-ircd-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:25 PM CST
+lm_sensors-3.4.0-8.20160601gitf9185e5.el7.x86_64 Wed 03 Feb 2021 03:27:25 PM CST
+nagios-plugins-pgsql-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-overcr-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-nwstat-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-ntp-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-nt-2.3.3-2.el7.x86_64          Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-mysql-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-mrtgtraf-2.3.3-2.el7.x86_64    Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-mrtg-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-mailq-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:27:04 PM CST
+nagios-plugins-log-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:27:04 PM CST
+postgresql-libs-9.2.24-4.el7_8.x86_64         Wed 03 Feb 2021 03:27:03 PM CST
+nagios-plugins-ldap-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:06 PM CST
+nagios-plugins-icmp-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:06 PM CST
+nagios-plugins-http-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:06 PM CST
+nagios-plugins-dig-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:21:06 PM CST
+nagios-plugins-dhcp-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:06 PM CST
+nagios-plugins-apt-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:21:06 PM CST
+python-dateutil-1.5-7.el7.noarch              Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-lcgdm-common-0.9.6-1.el7.x86_64 Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-ide_smart-2.3.3-2.el7.x86_64   Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-hpjd-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-game-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-fts-3.5.0-3.el7.noarch         Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-fping-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-flexlm-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-file_age-2.3.3-2.el7.x86_64    Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-dummy-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-dpm-disk-0.9.6-1.el7.x86_64    Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-dns-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-dbi-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-by_ssh-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 03:21:05 PM CST
+nagios-plugins-breeze-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 03:21:05 PM CST
+libdbi-0.8.4-6.el7.x86_64                     Wed 03 Feb 2021 03:21:04 PM CST
+qstat-2.11-13.20080912svn311.el7.x86_64       Wed 03 Feb 2021 03:21:03 PM CST
+php-5.4.16-48.el7.x86_64                      Wed 03 Feb 2021 03:21:03 PM CST
+nagios-4.4.5-7.el7.x86_64                     Wed 03 Feb 2021 03:21:03 PM CST
+libXpm-3.5.12-1.el7.x86_64                    Wed 03 Feb 2021 03:21:03 PM CST
+gd-2.0.35-27.el7_9.x86_64                     Wed 03 Feb 2021 03:21:03 PM CST
+fping-3.10-4.el7.x86_64                       Wed 03 Feb 2021 03:21:03 PM CST
+php-common-5.4.16-48.el7.x86_64               Wed 03 Feb 2021 03:21:02 PM CST
+php-cli-5.4.16-48.el7.x86_64                  Wed 03 Feb 2021 03:21:02 PM CST
+nagios-plugins-perl-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 03:21:01 PM CST
+libzip-0.10.1-8.el7.x86_64                    Wed 03 Feb 2021 03:21:01 PM CST
+nagios-plugins-nrpe-4.0.3-2.el7.x86_64        Wed 03 Feb 2021 08:25:19 AM CST
+nagios-plugins-cluster-2.3.3-2.el7.x86_64     Wed 03 Feb 2021 08:25:09 AM CST
+nagios-plugins-oracle-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 08:22:30 AM CST
+nagios-plugins-swap-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 08:20:47 AM CST
+nagios-plugins-ssh-2.3.3-2.el7.x86_64         Wed 03 Feb 2021 08:19:44 AM CST
+nagios-plugins-users-2.3.3-2.el7.x86_64       Wed 03 Feb 2021 08:19:29 AM CST
+nagios-plugins-load-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 08:19:22 AM CST
+nagios-plugins-disk-2.3.3-2.el7.x86_64        Wed 03 Feb 2021 08:19:13 AM CST
+nagios-plugins-nagios-2.3.3-2.el7.x86_64      Wed 03 Feb 2021 08:19:05 AM CST
+nagios-plugins-2.3.3-2.el7.x86_64             Wed 03 Feb 2021 08:15:56 AM CST
+nrpe-4.0.3-2.el7.x86_64                       Wed 03 Feb 2021 08:15:55 AM CST
+nagios-common-4.4.5-7.el7.x86_64              Wed 03 Feb 2021 08:15:55 AM CST
+gpg-pubkey-352c64e5-52ae6884                  Wed 03 Feb 2021 08:15:33 AM CST
+epel-release-7-13.noarch                      Wed 03 Feb 2021 08:13:52 AM CST
+nodejs-10.23.1-1nodesource.x86_64             Wed 13 Jan 2021 07:33:07 AM CST
+tree-1.6.0-10.el7.x86_64                      Wed 05 Aug 2020 11:05:38 PM CDT
+screen-4.1.0-0.25.20120314git3c2946.el7.x86_64 Tue 04 Aug 2020 10:58:42 PM CDT
+gpg-pubkey-34fa74dd-540237d4                  Wed 15 Jul 2020 02:01:58 PM CDT
+nodesource-release-el7-1.noarch               Wed 15 Jul 2020 02:01:06 PM CDT
+gcc-gfortran-4.8.5-39.0.3.el7.x86_64          Wed 15 Jul 2020 02:00:55 PM CDT
+gcc-objc++-4.8.5-39.0.3.el7.x86_64            Wed 15 Jul 2020 02:00:53 PM CDT
+gcc-gnat-4.8.5-39.0.3.el7.x86_64              Wed 15 Jul 2020 02:00:52 PM CDT
+libgnat-4.8.5-39.0.3.el7.x86_64               Wed 15 Jul 2020 02:00:49 PM CDT
+libgnat-devel-4.8.5-39.0.3.el7.x86_64         Wed 15 Jul 2020 02:00:48 PM CDT
+gcc-objc-4.8.5-39.0.3.el7.x86_64              Wed 15 Jul 2020 02:00:43 PM CDT
+libquadmath-devel-4.8.5-39.0.3.el7.x86_64     Wed 15 Jul 2020 02:00:41 PM CDT
+libquadmath-4.8.5-39.0.3.el7.x86_64           Wed 15 Jul 2020 02:00:41 PM CDT
+libobjc-4.8.5-39.0.3.el7.x86_64               Wed 15 Jul 2020 02:00:41 PM CDT
+libgfortran-4.8.5-39.0.3.el7.x86_64           Wed 15 Jul 2020 02:00:41 PM CDT
+yum-3.4.3-167.0.1.el7.noarch                  Wed 15 Jul 2020 01:53:33 PM CDT
+nss_compat_ossl-0.9.6-8.el7.x86_64            Tue 14 Jul 2020 03:44:53 PM CDT
+elinks-0.12-0.37.pre6.el7.x86_64              Tue 14 Jul 2020 03:44:53 PM CDT
+js-1.8.5-20.el7.x86_64                        Tue 14 Jul 2020 03:44:52 PM CDT
+kernel-3.10.0-1062.12.1.el7.x86_64            Wed 12 Feb 2020 01:50:41 PM CST
+bpftool-3.10.0-1062.12.1.el7.x86_64           Wed 12 Feb 2020 01:50:36 PM CST
+binutils-2.27-41.base.0.7.el7_7.2.x86_64      Wed 12 Feb 2020 01:50:35 PM CST
+NetworkManager-config-server-1.18.0-5.el7_7.2.noarch Wed 12 Feb 2020 01:50:34 PM CST
+kernel-uek-4.14.35-1902.10.7.el7uek.x86_64    Wed 12 Feb 2020 01:50:32 PM CST
+kernel-headers-3.10.0-1062.12.1.el7.x86_64    Wed 12 Feb 2020 01:50:26 PM CST
+iprutils-2.4.17.1-3.el7_7.x86_64              Wed 12 Feb 2020 01:50:26 PM CST
+systemd-sysv-219-67.0.5.el7_7.3.x86_64        Wed 12 Feb 2020 01:50:09 PM CST
+systemd-python-219-67.0.5.el7_7.3.x86_64      Wed 12 Feb 2020 01:50:09 PM CST
+smartmontools-7.0-1.el7_7.1.x86_64            Wed 12 Feb 2020 01:50:09 PM CST
+python-perf-3.10.0-1062.12.1.el7.x86_64       Wed 12 Feb 2020 01:50:09 PM CST
+NetworkManager-tui-1.18.0-5.el7_7.2.x86_64    Wed 12 Feb 2020 01:50:09 PM CST
+NetworkManager-team-1.18.0-5.el7_7.2.x86_64   Wed 12 Feb 2020 01:50:09 PM CST
+mesa-libGL-18.3.4-6.el7_7.x86_64              Wed 12 Feb 2020 01:50:09 PM CST
+mesa-libEGL-18.3.4-6.el7_7.x86_64             Wed 12 Feb 2020 01:50:09 PM CST
+libgudev1-219-67.0.5.el7_7.3.x86_64           Wed 12 Feb 2020 01:50:09 PM CST
+firewalld-0.6.3-2.0.1.el7_7.3.noarch          Wed 12 Feb 2020 01:50:09 PM CST
+curl-7.29.0-54.0.3.el7_7.2.x86_64             Wed 12 Feb 2020 01:50:09 PM CST
+kernel-tools-3.10.0-1062.12.1.el7.x86_64      Wed 12 Feb 2020 01:50:05 PM CST
+sg3_utils-libs-1.37-18.0.1.el7_7.2.x86_64     Wed 12 Feb 2020 01:50:04 PM CST
+sg3_utils-1.37-18.0.1.el7_7.2.x86_64          Wed 12 Feb 2020 01:50:04 PM CST
+python-firewall-0.6.3-2.0.1.el7_7.3.noarch    Wed 12 Feb 2020 01:50:04 PM CST
+NetworkManager-1.18.0-5.el7_7.2.x86_64        Wed 12 Feb 2020 01:50:04 PM CST
+mesa-libgbm-18.3.4-6.el7_7.x86_64             Wed 12 Feb 2020 01:50:04 PM CST
+kernel-tools-libs-3.10.0-1062.12.1.el7.x86_64 Wed 12 Feb 2020 01:50:04 PM CST
+firewalld-filesystem-0.6.3-2.0.1.el7_7.3.noarch Wed 12 Feb 2020 01:50:04 PM CST
+NetworkManager-libnm-1.18.0-5.el7_7.2.x86_64  Wed 12 Feb 2020 01:50:03 PM CST
+mesa-libglapi-18.3.4-6.el7_7.x86_64           Wed 12 Feb 2020 01:50:03 PM CST
+systemd-219-67.0.5.el7_7.3.x86_64             Wed 12 Feb 2020 01:50:02 PM CST
+systemd-libs-219-67.0.5.el7_7.3.x86_64        Wed 12 Feb 2020 01:50:00 PM CST
+libcurl-7.29.0-54.0.3.el7_7.2.x86_64          Wed 12 Feb 2020 01:50:00 PM CST
+aide-0.15.1-13.0.1.el7.x86_64                 Mon 03 Feb 2020 06:44:12 PM CST
+sqlite-3.7.17-8.el7_7.1.x86_64                Fri 31 Jan 2020 11:03:02 AM CST
+kernel-uek-4.14.35-1902.10.4.1.el7uek.x86_64  Fri 31 Jan 2020 11:03:01 AM CST
+firefox-68.4.1-1.0.1.el7_7.x86_64             Fri 24 Jan 2020 05:04:42 PM CST
+gtk3-3.22.30-3.el7.x86_64                     Fri 24 Jan 2020 05:04:30 PM CST
+rest-0.8.1-2.el7.x86_64                       Fri 24 Jan 2020 05:04:29 PM CST
+libsoup-2.62.2-2.el7.x86_64                   Fri 24 Jan 2020 05:04:29 PM CST
+gnutls-3.3.29-9.el7_6.x86_64                  Fri 24 Jan 2020 05:04:29 PM CST
+glib-networking-2.56.1-1.el7.x86_64           Fri 24 Jan 2020 05:04:29 PM CST
+at-spi2-core-2.28.0-1.el7.x86_64              Fri 24 Jan 2020 05:04:29 PM CST
+at-spi2-atk-2.26.2-1.el7.x86_64               Fri 24 Jan 2020 05:04:29 PM CST
+xkeyboard-config-2.24-1.el7.noarch            Fri 24 Jan 2020 05:04:28 PM CST
+trousers-0.3.14-2.el7.x86_64                  Fri 24 Jan 2020 05:04:28 PM CST
+nettle-2.7.1-8.el7.x86_64                     Fri 24 Jan 2020 05:04:28 PM CST
+mozilla-filesystem-1.9-11.el7.x86_64          Fri 24 Jan 2020 05:04:28 PM CST
+libxkbcommon-0.7.1-3.el7.x86_64               Fri 24 Jan 2020 05:04:28 PM CST
+libwayland-egl-1.15.0-1.el7.x86_64            Fri 24 Jan 2020 05:04:28 PM CST
+adwaita-icon-theme-3.28.0-1.el7.noarch        Fri 24 Jan 2020 05:04:25 PM CST
+libwayland-cursor-1.15.0-1.el7.x86_64         Fri 24 Jan 2020 05:04:19 PM CST
+libgusb-0.2.9-1.el7.x86_64                    Fri 24 Jan 2020 05:04:19 PM CST
+libepoxy-1.5.2-1.el7.x86_64                   Fri 24 Jan 2020 05:04:19 PM CST
+json-glib-1.4.2-2.el7.x86_64                  Fri 24 Jan 2020 05:04:19 PM CST
+gsettings-desktop-schemas-3.28.0-2.el7.x86_64 Fri 24 Jan 2020 05:04:19 PM CST
+dconf-0.28.0-4.el7.x86_64                     Fri 24 Jan 2020 05:04:19 PM CST
+colord-libs-1.3.4-1.el7.x86_64                Fri 24 Jan 2020 05:04:19 PM CST
+adwaita-cursor-theme-3.28.0-1.el7.noarch      Fri 24 Jan 2020 05:04:19 PM CST
+xcb-util-0.4.0-2.el7.x86_64                   Fri 24 Jan 2020 05:04:18 PM CST
+startup-notification-0.12-8.el7.x86_64        Fri 24 Jan 2020 05:04:18 PM CST
+liberation-sans-fonts-1.07.2-16.el7.noarch    Fri 24 Jan 2020 05:04:18 PM CST
+liberation-fonts-common-1.07.2-16.el7.noarch  Fri 24 Jan 2020 05:04:18 PM CST
+lcms2-2.6-3.el7.x86_64                        Fri 24 Jan 2020 05:04:18 PM CST
+cairo-gobject-1.15.12-4.el7.x86_64            Fri 24 Jan 2020 05:04:18 PM CST
+java-1.8.0-openjdk-devel-1.8.0.242.b08-0.el7_7.x86_64 Wed 22 Jan 2020 12:00:03 PM CST
+java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64 Wed 22 Jan 2020 12:00:01 PM CST
+java-1.8.0-openjdk-headless-1.8.0.242.b08-0.el7_7.x86_64 Wed 22 Jan 2020 11:59:59 AM CST
+java-11-openjdk-devel-11.0.6.10-1.0.1.el7_7.x86_64 Tue 21 Jan 2020 01:15:38 AM CST
+gtk2-2.24.31-1.el7.x86_64                     Tue 21 Jan 2020 01:15:35 AM CST
+atk-2.28.1-1.el7.x86_64                       Tue 21 Jan 2020 01:15:35 AM CST
+xorg-x11-fonts-Type1-7.5-9.el7.noarch         Tue 21 Jan 2020 01:15:34 AM CST
+ttmkfdir-3.0.9-42.el7.x86_64                  Tue 21 Jan 2020 01:15:34 AM CST
+pango-1.42.4-4.el7_7.x86_64                   Tue 21 Jan 2020 01:15:34 AM CST
+libwayland-client-1.15.0-1.el7.x86_64         Tue 21 Jan 2020 01:15:34 AM CST
+libglvnd-egl-1.0.1-0.8.git5baa1e5.el7.x86_64  Tue 21 Jan 2020 01:15:34 AM CST
+java-11-openjdk-11.0.6.10-1.0.1.el7_7.x86_64  Tue 21 Jan 2020 01:15:34 AM CST
+hicolor-icon-theme-0.12-7.el7.noarch          Tue 21 Jan 2020 01:15:34 AM CST
+harfbuzz-1.7.5-2.el7.x86_64                   Tue 21 Jan 2020 01:15:34 AM CST
+graphite2-1.3.10-1.el7_3.x86_64               Tue 21 Jan 2020 01:15:34 AM CST
+cairo-1.15.12-4.el7.x86_64                    Tue 21 Jan 2020 01:15:34 AM CST
+java-11-openjdk-headless-11.0.6.10-1.0.1.el7_7.x86_64 Tue 21 Jan 2020 01:15:33 AM CST
+libthai-0.1.14-9.el7.x86_64                   Tue 21 Jan 2020 01:15:21 AM CST
+gtk-update-icon-cache-3.22.30-3.el7.x86_64    Tue 21 Jan 2020 01:15:21 AM CST
+gdk-pixbuf2-2.36.12-3.el7.x86_64              Tue 21 Jan 2020 01:15:21 AM CST
+fribidi-1.0.2-1.el7_7.1.x86_64                Tue 21 Jan 2020 01:15:21 AM CST
+cups-libs-1.6.3-40.el7.x86_64                 Tue 21 Jan 2020 01:15:21 AM CST
+avahi-libs-0.6.31-19.el7.x86_64               Tue 21 Jan 2020 01:15:21 AM CST
+xorg-x11-font-utils-7.5-21.el7.x86_64         Tue 21 Jan 2020 01:15:20 AM CST
+python-lxml-3.2.1-4.el7.x86_64                Tue 21 Jan 2020 01:15:20 AM CST
+python-javapackages-3.4.1-11.el7.noarch       Tue 21 Jan 2020 01:15:20 AM CST
+libXft-2.3.2-2.el7.x86_64                     Tue 21 Jan 2020 01:15:20 AM CST
+libXcursor-1.1.15-1.el7.x86_64                Tue 21 Jan 2020 01:15:20 AM CST
+libtiff-4.0.3-32.el7.x86_64                   Tue 21 Jan 2020 01:15:20 AM CST
+libfontenc-1.1.3-3.el7.x86_64                 Tue 21 Jan 2020 01:15:20 AM CST
+jbigkit-libs-2.0-11.el7.x86_64                Tue 21 Jan 2020 01:15:20 AM CST
+javapackages-tools-3.4.1-11.el7.noarch        Tue 21 Jan 2020 01:15:20 AM CST
+jasper-libs-1.900.1-33.el7.x86_64             Tue 21 Jan 2020 01:15:20 AM CST
+fontconfig-2.13.0-4.3.el7.x86_64              Tue 21 Jan 2020 01:15:19 AM CST
+tzdata-java-2019c-1.el7.noarch                Tue 21 Jan 2020 01:15:18 AM CST
+libXcomposite-0.4.4-4.1.el7.x86_64            Tue 21 Jan 2020 01:15:18 AM CST
+libwayland-server-1.15.0-1.el7.x86_64         Tue 21 Jan 2020 01:15:18 AM CST
+libglvnd-glx-1.0.1-0.8.git5baa1e5.el7.x86_64  Tue 21 Jan 2020 01:15:18 AM CST
+libglvnd-1.0.1-0.8.git5baa1e5.el7.x86_64      Tue 21 Jan 2020 01:15:18 AM CST
+giflib-4.1.6-9.el7.x86_64                     Tue 21 Jan 2020 01:15:18 AM CST
+fontpackages-filesystem-1.44-8.el7.noarch     Tue 21 Jan 2020 01:15:18 AM CST
+dejavu-sans-fonts-2.33-6.el7.noarch           Tue 21 Jan 2020 01:15:18 AM CST
+dejavu-fonts-common-2.33-6.el7.noarch         Tue 21 Jan 2020 01:15:18 AM CST
+copy-jdk-configs-3.3-10.el7_5.noarch          Tue 21 Jan 2020 01:15:18 AM CST
+pcsc-lite-libs-1.8.8-8.el7.x86_64             Tue 21 Jan 2020 01:15:17 AM CST
+lksctp-tools-1.0.17-2.el7.x86_64              Tue 21 Jan 2020 01:15:17 AM CST
+libxshmfence-1.2-1.el7.x86_64                 Tue 21 Jan 2020 01:15:17 AM CST
+libXfixes-5.0.3-1.el7.x86_64                  Tue 21 Jan 2020 01:15:17 AM CST
+libXdamage-1.1.4-4.1.el7.x86_64               Tue 21 Jan 2020 01:15:17 AM CST
+nmap-ncat-6.40-19.el7.x86_64                  Mon 20 Jan 2020 11:09:01 PM CST
+xorg-x11-xauth-1.0.9-1.el7.x86_64             Sun 19 Jan 2020 10:26:17 PM CST
+oracle-rdbms-server-12cR1-preinstall-1.0-7.el7.x86_64 Sun 19 Jan 2020 10:26:17 PM CST
+nfs-utils-1.3.0-0.65.0.1.el7.x86_64           Sun 19 Jan 2020 10:26:17 PM CST
+libXmu-1.1.2-2.el7.x86_64                     Sun 19 Jan 2020 10:26:17 PM CST
+libpath_utils-0.2.1-32.el7.x86_64             Sun 19 Jan 2020 10:26:17 PM CST
+libini_config-1.3.1-32.el7.x86_64             Sun 19 Jan 2020 10:26:17 PM CST
+gssproxy-0.7.0-26.el7.x86_64                  Sun 19 Jan 2020 10:26:17 PM CST
+xorg-x11-utils-7.5-23.el7.x86_64              Sun 19 Jan 2020 10:26:16 PM CST
+psmisc-22.20-16.el7.x86_64                    Sun 19 Jan 2020 10:26:16 PM CST
+libXxf86vm-1.1.4-1.el7.x86_64                 Sun 19 Jan 2020 10:26:16 PM CST
+libXxf86misc-1.0.3-7.1.el7.x86_64             Sun 19 Jan 2020 10:26:16 PM CST
+libXxf86dga-1.1.4-2.1.el7.x86_64              Sun 19 Jan 2020 10:26:16 PM CST
+libXv-1.0.11-1.el7.x86_64                     Sun 19 Jan 2020 10:26:16 PM CST
+libXtst-1.2.3-1.el7.x86_64                    Sun 19 Jan 2020 10:26:16 PM CST
+libXt-1.1.5-3.el7.x86_64                      Sun 19 Jan 2020 10:26:16 PM CST
+libXrender-0.9.10-1.el7.x86_64                Sun 19 Jan 2020 10:26:16 PM CST
+libXrandr-1.5.1-2.el7.x86_64                  Sun 19 Jan 2020 10:26:16 PM CST
+libXinerama-1.1.3-2.1.el7.x86_64              Sun 19 Jan 2020 10:26:16 PM CST
+libXi-1.7.9-1.el7.x86_64                      Sun 19 Jan 2020 10:26:16 PM CST
+libXext-1.3.3-3.el7.x86_64                    Sun 19 Jan 2020 10:26:16 PM CST
+libX11-common-1.6.7-2.el7.noarch              Sun 19 Jan 2020 10:26:16 PM CST
+libX11-1.6.7-2.el7.x86_64                     Sun 19 Jan 2020 10:26:16 PM CST
+libdmx-1.1.3-3.el7.x86_64                     Sun 19 Jan 2020 10:26:16 PM CST
+gcc-c++-4.8.5-39.0.3.el7.x86_64               Sun 19 Jan 2020 10:26:15 PM CST
+gcc-4.8.5-39.0.3.el7.x86_64                   Sun 19 Jan 2020 10:26:15 PM CST
+glibc-headers-2.17-292.0.1.el7.x86_64         Sun 19 Jan 2020 10:26:13 PM CST
+glibc-devel-2.17-292.0.1.el7.x86_64           Sun 19 Jan 2020 10:26:13 PM CST
+libnfsidmap-0.25-19.el7.x86_64                Sun 19 Jan 2020 10:26:12 PM CST
+libaio-devel-0.3.109-13.el7.x86_64            Sun 19 Jan 2020 10:26:12 PM CST
+ksh-20120801-139.0.1.el7.x86_64               Sun 19 Jan 2020 10:26:12 PM CST
+keyutils-1.5.8-3.el7.x86_64                   Sun 19 Jan 2020 10:26:12 PM CST
+cpp-4.8.5-39.0.3.el7.x86_64                   Sun 19 Jan 2020 10:26:12 PM CST
+libverto-libevent-0.2.5-4.el7.x86_64          Sun 19 Jan 2020 10:26:11 PM CST
+libstdc++-devel-4.8.5-39.0.3.el7.x86_64       Sun 19 Jan 2020 10:26:11 PM CST
+libSM-1.2.2-2.el7.x86_64                      Sun 19 Jan 2020 10:26:11 PM CST
+libICE-1.0.9-9.el7.x86_64                     Sun 19 Jan 2020 10:26:11 PM CST
+libcollection-0.7.0-32.el7.x86_64             Sun 19 Jan 2020 10:26:11 PM CST
+libbasicobjects-0.1.1-32.el7.x86_64           Sun 19 Jan 2020 10:26:11 PM CST
+mpfr-3.1.1-4.el7.x86_64                       Sun 19 Jan 2020 10:26:10 PM CST
+libxcb-1.13-1.el7.x86_64                      Sun 19 Jan 2020 10:26:10 PM CST
+libXau-1.0.8-2.1.el7.x86_64                   Sun 19 Jan 2020 10:26:10 PM CST
+libref_array-0.1.5-32.el7.x86_64              Sun 19 Jan 2020 10:26:10 PM CST
+libmpc-1.0.1-3.el7.x86_64                     Sun 19 Jan 2020 10:26:10 PM CST
+libevent-2.0.21-4.el7.x86_64                  Sun 19 Jan 2020 10:26:10 PM CST
+httpd-2.4.6-90.0.1.el7.x86_64                 Sun 19 Jan 2020 10:12:44 PM CST
+mailcap-2.1.41-2.el7.noarch                   Sun 19 Jan 2020 10:12:43 PM CST
+httpd-tools-2.4.6-90.0.1.el7.x86_64           Sun 19 Jan 2020 10:12:43 PM CST
+apr-util-1.5.2-6.0.1.el7.x86_64               Sun 19 Jan 2020 10:12:43 PM CST
+apr-1.4.8-5.el7.x86_64                        Sun 19 Jan 2020 10:12:43 PM CST
+iwl7260-firmware-22.0.7.0-999.2.el7.noarch    Sun 19 Jan 2020 10:04:58 PM CST
+iwl4965-firmware-228.61.2.24-999.2.el7.noarch Sun 19 Jan 2020 10:04:58 PM CST
+man-pages-overrides-7.7.3-1.el7.x86_64        Sun 19 Jan 2020 10:04:57 PM CST
+iwl6000g2a-firmware-17.168.5.3-999.2.el7.noarch Sun 19 Jan 2020 10:04:57 PM CST
+iwl5150-firmware-8.24.2.2-999.2.el7.noarch    Sun 19 Jan 2020 10:04:57 PM CST
+iwl3945-firmware-15.32.2.9-999.2.el7.noarch   Sun 19 Jan 2020 10:04:57 PM CST
+iwl3160-firmware-22.0.7.0-999.2.el7.noarch    Sun 19 Jan 2020 10:04:57 PM CST
+iwl2000-firmware-18.168.6.1-999.2.el7.noarch  Sun 19 Jan 2020 10:04:57 PM CST
+iwl105-firmware-18.168.6.1-999.2.el7.noarch   Sun 19 Jan 2020 10:04:57 PM CST
+iwl100-firmware-39.31.5.1-999.2.el7.noarch    Sun 19 Jan 2020 10:04:57 PM CST
+iwl7265-firmware-22.0.7.0-999.2.el7.noarch    Sun 19 Jan 2020 10:04:56 PM CST
+iwl1000-firmware-39.31.5.1-999.2.el7.noarch   Sun 19 Jan 2020 10:04:56 PM CST
+iwl6050-firmware-41.28.5.1-999.2.el7.noarch   Sun 19 Jan 2020 10:04:53 PM CST
+iwl6000g2b-firmware-17.168.5.2-999.2.el7.noarch Sun 19 Jan 2020 10:04:53 PM CST
+iwl6000-firmware-9.221.4.1-999.2.el7.noarch   Sun 19 Jan 2020 10:04:53 PM CST
+iwl5000-firmware-8.83.5.1_1-999.2.el7.noarch  Sun 19 Jan 2020 10:04:53 PM CST
+unzip-6.0-20.el7.x86_64                       Sun 19 Jan 2020 10:04:52 PM CST
+libgomp-4.8.5-39.0.3.el7.x86_64               Sun 19 Jan 2020 10:04:52 PM CST
+iwl2030-firmware-18.168.6.1-999.2.el7.noarch  Sun 19 Jan 2020 10:04:52 PM CST
+iwl135-firmware-18.168.6.1-999.2.el7.noarch   Sun 19 Jan 2020 10:04:52 PM CST
+compat-libgfortran-41-4.1.2-45.el7.x86_64     Sun 19 Jan 2020 10:04:52 PM CST
+wget-1.14-18.el7_6.1.x86_64                   Sun 19 Jan 2020 10:04:51 PM CST
+vim-enhanced-7.4.629-6.el7.x86_64             Sun 19 Jan 2020 10:04:51 PM CST
+perl-Pod-Escapes-1.04-294.el7_6.noarch        Sun 19 Jan 2020 10:04:51 PM CST
+compat-libtiff3-3.9.4-12.el7.x86_64           Sun 19 Jan 2020 10:04:51 PM CST
+alsa-lib-1.1.8-1.el7.x86_64                   Sun 19 Jan 2020 10:04:51 PM CST
+mariadb-libs-5.5.64-1.el7.x86_64              Sun 19 Jan 2020 10:04:50 PM CST
+sssd-client-1.16.4-21.0.1.el7_7.1.x86_64      Sun 19 Jan 2020 10:04:48 PM CST
+e2fsprogs-1.42.9-16.el7.x86_64                Sun 19 Jan 2020 10:04:48 PM CST
+btrfs-progs-4.15.1-1.el7.x86_64               Sun 19 Jan 2020 10:04:48 PM CST
+tcpdump-4.9.2-4.el7_7.1.x86_64                Sun 19 Jan 2020 10:04:47 PM CST
+systemtap-runtime-4.0-10.0.1.el7_7.x86_64     Sun 19 Jan 2020 10:04:47 PM CST
+sudo-1.8.23-4.0.1.el7.x86_64                  Sun 19 Jan 2020 10:04:47 PM CST
+rhn-check-2.0.2-24.0.7.el7.x86_64             Sun 19 Jan 2020 10:04:47 PM CST
+python-chardet-2.2.1-3.el7.noarch             Sun 19 Jan 2020 10:04:47 PM CST
+langtable-python-0.0.31-4.el7.noarch          Sun 19 Jan 2020 10:04:47 PM CST
+dracut-config-rescue-033-564.0.7.el7.x86_64   Sun 19 Jan 2020 10:04:47 PM CST
+desktop-file-utils-0.23-2.el7.x86_64          Sun 19 Jan 2020 10:04:47 PM CST
+blktrace-1.0.5-9.el7.x86_64                   Sun 19 Jan 2020 10:04:47 PM CST
+bind-utils-9.11.4-9.P2.el7.x86_64             Sun 19 Jan 2020 10:04:47 PM CST
+xfsprogs-4.15-6.el7.x86_64                    Sun 19 Jan 2020 10:04:46 PM CST
+rng-tools-6.3.1-4.el7.x86_64                  Sun 19 Jan 2020 10:04:46 PM CST
+qemu-guest-agent-2.12.0-3.el7.x86_64          Sun 19 Jan 2020 10:04:46 PM CST
+parted-3.1-31.0.1.el7.x86_64                  Sun 19 Jan 2020 10:04:46 PM CST
+ntpdate-4.2.6p5-29.0.1.el7.x86_64             Sun 19 Jan 2020 10:04:46 PM CST
+net-tools-2.0-0.25.20131004git.el7.x86_64     Sun 19 Jan 2020 10:04:46 PM CST
+cryptsetup-2.0.3-5.el7.x86_64                 Sun 19 Jan 2020 10:04:46 PM CST
+chrony-3.4-1.0.1.el7.x86_64                   Sun 19 Jan 2020 10:04:46 PM CST
+biosdevname-0.7.3-2.el7.x86_64                Sun 19 Jan 2020 10:04:46 PM CST
+rsyslog-8.24.0-41.el7_7.2.x86_64              Sun 19 Jan 2020 10:04:45 PM CST
+rsync-3.1.2-6.el7_6.1.x86_64                  Sun 19 Jan 2020 10:04:45 PM CST
+mdadm-4.1-1.0.1.el7.x86_64                    Sun 19 Jan 2020 10:04:45 PM CST
+irqbalance-1.0.8-2.el7.x86_64                 Sun 19 Jan 2020 10:04:45 PM CST
+microcode_ctl-2.1-53.3.0.4.el7_7.x86_64       Sun 19 Jan 2020 10:04:41 PM CST
+libreport-plugin-mailx-2.1.11-43.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:40 PM CST
+kernel-uek-4.14.35-1902.9.2.el7uek.x86_64     Sun 19 Jan 2020 10:04:40 PM CST
+tuned-2.11.0-5.0.2.el7_7.1.noarch             Sun 19 Jan 2020 10:04:34 PM CST
+sysstat-10.1.5-18.el7.x86_64                  Sun 19 Jan 2020 10:04:34 PM CST
+audit-2.8.5-4.el7.x86_64                      Sun 19 Jan 2020 10:04:34 PM CST
+openssh-server-7.4p1-21.el7.x86_64            Sun 19 Jan 2020 10:04:33 PM CST
+openssh-clients-7.4p1-21.el7.x86_64           Sun 19 Jan 2020 10:04:33 PM CST
+selinux-policy-targeted-3.13.1-252.0.2.el7_7.6.noarch Sun 19 Jan 2020 10:04:23 PM CST
+vdo-6.1.2.41-4.el7.x86_64                     Sun 19 Jan 2020 10:04:21 PM CST
+quota-4.01-19.el7.x86_64                      Sun 19 Jan 2020 10:04:21 PM CST
+grub2-2.02-0.80.0.3.el7.x86_64                Sun 19 Jan 2020 10:04:21 PM CST
+scap-security-guide-0.1.43-13.0.1.el7.noarch  Sun 19 Jan 2020 10:04:20 PM CST
+lshw-B.02.18-13.el7.x86_64                    Sun 19 Jan 2020 10:04:20 PM CST
+usermode-1.111-6.el7.x86_64                   Sun 19 Jan 2020 10:04:18 PM CST
+rhn-setup-2.0.2-24.0.7.el7.x86_64             Sun 19 Jan 2020 10:04:18 PM CST
+plymouth-0.8.9-0.32.20140113.0.1.el7.x86_64   Sun 19 Jan 2020 10:04:18 PM CST
+elfutils-0.176-2.el7.x86_64                   Sun 19 Jan 2020 10:04:18 PM CST
+abrt-console-notification-2.1.11-55.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:18 PM CST
+abrt-cli-2.1.11-55.0.1.el7.x86_64             Sun 19 Jan 2020 10:04:18 PM CST
+abrt-addon-ccpp-2.1.11-55.0.1.el7.x86_64      Sun 19 Jan 2020 10:04:18 PM CST
+plymouth-scripts-0.8.9-0.32.20140113.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:17 PM CST
+plymouth-core-libs-0.8.9-0.32.20140113.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:17 PM CST
+openscap-scanner-1.2.17-4.0.1.el7.x86_64      Sun 19 Jan 2020 10:04:17 PM CST
+openscap-1.2.17-4.0.1.el7.x86_64              Sun 19 Jan 2020 10:04:17 PM CST
+teamd-1.27-9.el7.x86_64                       Sun 19 Jan 2020 10:04:15 PM CST
+libdrm-2.4.97-2.el7.x86_64                    Sun 19 Jan 2020 10:04:15 PM CST
+abrt-addon-python-2.1.11-55.0.1.el7.x86_64    Sun 19 Jan 2020 10:04:15 PM CST
+hwdata-0.252-9.3.el7.x86_64                   Sun 19 Jan 2020 10:04:14 PM CST
+abrt-tui-2.1.11-55.0.1.el7.x86_64             Sun 19 Jan 2020 10:04:14 PM CST
+abrt-dbus-2.1.11-55.0.1.el7.x86_64            Sun 19 Jan 2020 10:04:14 PM CST
+abrt-addon-xorg-2.1.11-55.0.1.el7.x86_64      Sun 19 Jan 2020 10:04:14 PM CST
+abrt-addon-vmcore-2.1.11-55.0.1.el7.x86_64    Sun 19 Jan 2020 10:04:14 PM CST
+abrt-addon-pstoreoops-2.1.11-55.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:14 PM CST
+abrt-addon-kerneloops-2.1.11-55.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:14 PM CST
+abrt-2.1.11-55.0.1.el7.x86_64                 Sun 19 Jan 2020 10:04:14 PM CST
+libreport-web-2.1.11-43.0.1.el7.x86_64        Sun 19 Jan 2020 10:04:13 PM CST
+libreport-plugin-ureport-2.1.11-43.0.1.el7.x86_64 Sun 19 Jan 2020 10:04:13 PM CST
+libreport-cli-2.1.11-43.0.1.el7.x86_64        Sun 19 Jan 2020 10:04:13 PM CST
+kmod-kvdo-6.1.2.41-5.0.1.el7.x86_64           Sun 19 Jan 2020 10:04:13 PM CST
+abrt-python-2.1.11-55.0.1.el7.x86_64          Sun 19 Jan 2020 10:04:13 PM CST
+kernel-3.10.0-1062.9.1.el7.x86_64             Sun 19 Jan 2020 10:04:10 PM CST
+lvm2-libs-2.02.185-2.0.1.el7_7.2.x86_64       Sun 19 Jan 2020 10:04:05 PM CST
+lvm2-2.02.185-2.0.1.el7_7.2.x86_64            Sun 19 Jan 2020 10:04:05 PM CST
+rpcbind-0.2.0-48.el7.x86_64                   Sun 19 Jan 2020 10:04:04 PM CST
+kexec-tools-2.0.15-33.0.1.el7.x86_64          Sun 19 Jan 2020 10:04:04 PM CST
+grub2-tools-extra-2.02-0.80.0.3.el7.x86_64    Sun 19 Jan 2020 10:04:04 PM CST
+grub2-pc-2.02-0.80.0.3.el7.x86_64             Sun 19 Jan 2020 10:04:04 PM CST
+dracut-network-033-564.0.7.el7.x86_64         Sun 19 Jan 2020 10:04:04 PM CST
+dhcp-common-4.2.5-77.0.1.el7.x86_64           Sun 19 Jan 2020 10:04:04 PM CST
+dhclient-4.2.5-77.0.1.el7.x86_64              Sun 19 Jan 2020 10:04:04 PM CST
+device-mapper-event-1.02.158-2.0.1.el7_7.2.x86_64 Sun 19 Jan 2020 10:04:04 PM CST
+selinux-policy-3.13.1-252.0.2.el7_7.6.noarch  Sun 19 Jan 2020 10:03:54 PM CST
+policycoreutils-2.5-33.0.1.el7.x86_64         Sun 19 Jan 2020 10:03:54 PM CST
+openssh-7.4p1-21.el7.x86_64                   Sun 19 Jan 2020 10:03:54 PM CST
+libstoragemgmt-python-clibs-1.7.3-3.0.1.el7.x86_64 Sun 19 Jan 2020 10:03:51 PM CST
+libstoragemgmt-python-1.7.3-3.0.1.el7.noarch  Sun 19 Jan 2020 10:03:51 PM CST
+libstoragemgmt-1.7.3-3.0.1.el7.x86_64         Sun 19 Jan 2020 10:03:51 PM CST
+dhcp-libs-4.2.5-77.0.1.el7.x86_64             Sun 19 Jan 2020 10:03:51 PM CST
+cronie-anacron-1.4.11-23.el7.x86_64           Sun 19 Jan 2020 10:03:51 PM CST
+cronie-1.4.11-23.el7.x86_64                   Sun 19 Jan 2020 10:03:51 PM CST
+polkit-0.112-22.0.1.el7_7.1.x86_64            Sun 19 Jan 2020 10:03:50 PM CST
+initscripts-9.49.47-1.0.1.el7.x86_64          Sun 19 Jan 2020 10:03:50 PM CST
+grub2-tools-minimal-2.02-0.80.0.3.el7.x86_64  Sun 19 Jan 2020 10:03:50 PM CST
+grub2-tools-2.02-0.80.0.3.el7.x86_64          Sun 19 Jan 2020 10:03:50 PM CST
+device-mapper-event-libs-1.02.158-2.0.1.el7_7.2.x86_64 Sun 19 Jan 2020 10:03:50 PM CST
+libreport-python-2.1.11-43.0.1.el7.x86_64     Sun 19 Jan 2020 10:03:49 PM CST
+libreport-2.1.11-43.0.1.el7.x86_64            Sun 19 Jan 2020 10:03:49 PM CST
+elfutils-default-yama-scope-0.176-2.el7.noarch Sun 19 Jan 2020 10:03:49 PM CST
+dbus-1.10.24-13.0.1.el7_6.x86_64              Sun 19 Jan 2020 10:03:49 PM CST
+abrt-libs-2.1.11-55.0.1.el7.x86_64            Sun 19 Jan 2020 10:03:49 PM CST
+kmod-20-25.0.1.el7.x86_64                     Sun 19 Jan 2020 10:03:47 PM CST
+elfutils-libs-0.176-2.el7.x86_64              Sun 19 Jan 2020 10:03:47 PM CST
+device-mapper-libs-1.02.158-2.0.1.el7_7.2.x86_64 Sun 19 Jan 2020 10:03:47 PM CST
+dbus-libs-1.10.24-13.0.1.el7_6.x86_64         Sun 19 Jan 2020 10:03:47 PM CST
+cryptsetup-libs-2.0.3-5.el7.x86_64            Sun 19 Jan 2020 10:03:47 PM CST
+util-linux-2.23.2-61.el7_7.1.x86_64           Sun 19 Jan 2020 10:03:46 PM CST
+procps-ng-3.3.10-26.el7_7.1.x86_64            Sun 19 Jan 2020 10:03:46 PM CST
+kpartx-0.4.9-127.el7.x86_64                   Sun 19 Jan 2020 10:03:46 PM CST
+dracut-033-564.0.7.el7.x86_64                 Sun 19 Jan 2020 10:03:46 PM CST
+device-mapper-1.02.158-2.0.1.el7_7.2.x86_64   Sun 19 Jan 2020 10:03:46 PM CST
+geoipupdate-2.5.0-1.el7.x86_64                Sun 19 Jan 2020 10:03:44 PM CST
+GeoIP-1.5.0-14.el7.x86_64                     Sun 19 Jan 2020 10:03:44 PM CST
+bind-libs-lite-9.11.4-9.P2.el7.x86_64         Sun 19 Jan 2020 10:03:44 PM CST
+bind-libs-9.11.4-9.P2.el7.x86_64              Sun 19 Jan 2020 10:03:44 PM CST
+rhn-client-tools-2.0.2-24.0.7.el7.x86_64      Sun 19 Jan 2020 10:03:43 PM CST
+yum-utils-1.1.31-52.0.1.el7.noarch            Sun 19 Jan 2020 10:03:35 PM CST
+rpm-python-4.11.3-40.el7.x86_64               Sun 19 Jan 2020 10:03:35 PM CST
+rpm-build-libs-4.11.3-40.el7.x86_64           Sun 19 Jan 2020 10:03:35 PM CST
+oraclelinux-release-el7-1.0-8.el7.x86_64      Sun 19 Jan 2020 10:03:35 PM CST
+openldap-2.4.44-21.el7_6.x86_64               Sun 19 Jan 2020 10:03:35 PM CST
+rpm-libs-4.11.3-40.el7.x86_64                 Sun 19 Jan 2020 10:03:34 PM CST
+rpm-4.11.3-40.el7.x86_64                      Sun 19 Jan 2020 10:03:34 PM CST
+openssl-1.0.2k-19.0.1.el7.x86_64              Sun 19 Jan 2020 10:03:33 PM CST
+nss-tools-3.44.0-7.el7_7.x86_64               Sun 19 Jan 2020 10:03:33 PM CST
+nss-sysinit-3.44.0-7.el7_7.x86_64             Sun 19 Jan 2020 10:03:33 PM CST
+nss-pem-1.0.3-7.el7.x86_64                    Sun 19 Jan 2020 10:03:33 PM CST
+nss-3.44.0-7.el7_7.x86_64                     Sun 19 Jan 2020 10:03:33 PM CST
+libtirpc-0.2.4-0.16.el7.x86_64                Sun 19 Jan 2020 10:03:33 PM CST
+libssh2-1.8.0-3.el7.x86_64                    Sun 19 Jan 2020 10:03:33 PM CST
+gdb-7.6.1-115.el7.x86_64                      Sun 19 Jan 2020 10:03:32 PM CST
+bind-export-libs-9.11.4-9.P2.el7.x86_64       Sun 19 Jan 2020 10:03:32 PM CST
+sos-3.7-10.0.1.el7_7.noarch                   Sun 19 Jan 2020 10:03:31 PM CST
+python-linux-procfs-0.4.11-4.el7.noarch       Sun 19 Jan 2020 10:03:31 PM CST
+python-ethtool-0.8-8.el7.x86_64               Sun 19 Jan 2020 10:03:30 PM CST
+passwd-0.79-5.el7.x86_64                      Sun 19 Jan 2020 10:03:30 PM CST
+oracle-logos-70.7.0-1.0.5.el7.noarch          Sun 19 Jan 2020 10:03:30 PM CST
+linux-firmware-20190627-999.2.git7ae3a09d.el7.noarch Sun 19 Jan 2020 10:03:29 PM CST
+grubby-8.28-26.0.1.el7.x86_64                 Sun 19 Jan 2020 10:03:13 PM CST
+glib2-2.56.1-5.el7.x86_64                     Sun 19 Jan 2020 10:03:13 PM CST
+python-libs-2.7.5-86.0.3.el7.x86_64           Sun 19 Jan 2020 10:03:12 PM CST
+python-2.7.5-86.0.3.el7.x86_64                Sun 19 Jan 2020 10:03:12 PM CST
+libmount-2.23.2-61.el7_7.1.x86_64             Sun 19 Jan 2020 10:03:12 PM CST
+shadow-utils-4.6-5.0.1.el7.x86_64             Sun 19 Jan 2020 10:03:10 PM CST
+openssl-libs-1.0.2k-19.0.1.el7.x86_64         Sun 19 Jan 2020 10:03:09 PM CST
+libblkid-2.23.2-61.el7_7.1.x86_64             Sun 19 Jan 2020 10:03:09 PM CST
+krb5-libs-1.15.1-37.el7_7.2.x86_64            Sun 19 Jan 2020 10:03:09 PM CST
+coreutils-8.22-24.0.1.el7.x86_64              Sun 19 Jan 2020 10:03:09 PM CST
+vim-common-7.4.629-6.el7.x86_64               Sun 19 Jan 2020 10:03:07 PM CST
+make-3.82-24.el7.x86_64                       Sun 19 Jan 2020 10:03:07 PM CST
+libsss_idmap-1.16.4-21.0.1.el7_7.1.x86_64     Sun 19 Jan 2020 10:03:07 PM CST
+kmod-libs-20-25.0.1.el7.x86_64                Sun 19 Jan 2020 10:03:07 PM CST
+iptables-1.4.21-33.el7.x86_64                 Sun 19 Jan 2020 10:03:07 PM CST
+ca-certificates-2019.2.32-76.el7_7.noarch     Sun 19 Jan 2020 10:03:07 PM CST
+numactl-libs-2.0.12-3.el7_7.1.x86_64          Sun 19 Jan 2020 10:03:03 PM CST
+lm_sensors-libs-3.4.0-8.20160601gitf9185e5.el7.x86_64 Sun 19 Jan 2020 10:03:03 PM CST
+libzstd-1.3.4-1.el7.x86_64                    Sun 19 Jan 2020 10:03:03 PM CST
+libsss_nss_idmap-1.16.4-21.0.1.el7_7.1.x86_64 Sun 19 Jan 2020 10:03:03 PM CST
+libsmartcols-2.23.2-61.el7_7.1.x86_64         Sun 19 Jan 2020 10:03:03 PM CST
+libndp-1.2-9.el7.x86_64                       Sun 19 Jan 2020 10:03:03 PM CST
+freetype-2.8-14.el7.x86_64                    Sun 19 Jan 2020 10:03:03 PM CST
+dmidecode-3.2-3.el7.x86_64                    Sun 19 Jan 2020 10:03:03 PM CST
+vim-minimal-7.4.629-6.el7.x86_64              Sun 19 Jan 2020 10:03:02 PM CST
+libteam-1.27-9.el7.x86_64                     Sun 19 Jan 2020 10:03:02 PM CST
+libss-1.42.9-16.el7.x86_64                    Sun 19 Jan 2020 10:03:02 PM CST
+libjpeg-turbo-1.2.90-8.el7.x86_64             Sun 19 Jan 2020 10:03:02 PM CST
+ipset-libs-7.1-1.el7.x86_64                   Sun 19 Jan 2020 10:03:02 PM CST
+ipset-7.1-1.el7.x86_64                        Sun 19 Jan 2020 10:03:02 PM CST
+gpm-libs-1.20.7-6.el7.x86_64                  Sun 19 Jan 2020 10:03:02 PM CST
+dyninst-9.3.1-3.el7.x86_64                    Sun 19 Jan 2020 10:03:02 PM CST
+nss-softokn-3.44.0-8.0.1.el7_7.x86_64         Sun 19 Jan 2020 10:03:01 PM CST
+lz4-1.7.5-3.el7.x86_64                        Sun 19 Jan 2020 10:03:01 PM CST
+libdb-utils-5.3.21-25.el7.x86_64              Sun 19 Jan 2020 10:03:01 PM CST
+iproute-4.16.0-1.0.5.el7.x86_64               Sun 19 Jan 2020 10:03:01 PM CST
+hostname-3.13-3.el7_7.1.x86_64                Sun 19 Jan 2020 10:03:01 PM CST
+ethtool-4.8-10.el7.x86_64                     Sun 19 Jan 2020 10:03:01 PM CST
+e2fsprogs-libs-1.42.9-16.el7.x86_64           Sun 19 Jan 2020 10:03:01 PM CST
+diffutils-3.3-5.el7.x86_64                    Sun 19 Jan 2020 10:03:01 PM CST
+device-mapper-persistent-data-0.8.5-1.el7.x86_64 Sun 19 Jan 2020 10:03:01 PM CST
+perl-5.16.3-294.el7_6.x86_64                  Sun 19 Jan 2020 10:03:00 PM CST
+perl-macros-5.16.3-294.el7_6.x86_64           Sun 19 Jan 2020 10:02:58 PM CST
+perl-libs-5.16.3-294.el7_6.x86_64             Sun 19 Jan 2020 10:02:58 PM CST
+oraclelinux-release-7.7-1.0.5.el7.x86_64      Sun 19 Jan 2020 10:02:58 PM CST
+augeas-libs-1.4.0-9.el7.x86_64                Sun 19 Jan 2020 10:02:58 PM CST
+readline-6.2-11.el7.x86_64                    Sun 19 Jan 2020 10:02:57 PM CST
+nss-util-3.44.0-4.el7_7.x86_64                Sun 19 Jan 2020 10:02:57 PM CST
+nspr-4.21.0-1.el7.x86_64                      Sun 19 Jan 2020 10:02:57 PM CST
+libuuid-2.23.2-61.el7_7.1.x86_64              Sun 19 Jan 2020 10:02:57 PM CST
+libstdc++-4.8.5-39.0.3.el7.x86_64             Sun 19 Jan 2020 10:02:57 PM CST
+libdb-5.3.21-25.el7.x86_64                    Sun 19 Jan 2020 10:02:57 PM CST
+libcom_err-1.42.9-16.el7.x86_64               Sun 19 Jan 2020 10:02:57 PM CST
+libcap-2.22-10.el7.x86_64                     Sun 19 Jan 2020 10:02:57 PM CST
+glibc-2.17-292.0.1.el7.x86_64                 Sun 19 Jan 2020 10:02:57 PM CST
+elfutils-libelf-0.176-2.el7.x86_64            Sun 19 Jan 2020 10:02:57 PM CST
+audit-libs-2.8.5-4.el7.x86_64                 Sun 19 Jan 2020 10:02:57 PM CST
+nss-softokn-freebl-3.44.0-8.0.1.el7_7.x86_64  Sun 19 Jan 2020 10:02:56 PM CST
+glibc-common-2.17-292.0.1.el7.x86_64          Sun 19 Jan 2020 10:02:54 PM CST
+tzdata-2019c-1.el7.noarch                     Sun 19 Jan 2020 10:02:50 PM CST
+bash-4.2.46-33.el7.x86_64                     Sun 19 Jan 2020 10:02:50 PM CST
+vim-filesystem-7.4.629-6.el7.x86_64           Sun 19 Jan 2020 10:02:49 PM CST
+quota-nls-4.01-19.el7.noarch                  Sun 19 Jan 2020 10:02:49 PM CST
+grub2-pc-modules-2.02-0.80.0.3.el7.noarch     Sun 19 Jan 2020 10:02:49 PM CST
+redhat-release-server-7.7-10.0.1.el7.x86_64   Sun 19 Jan 2020 10:02:48 PM CST
+libreport-filesystem-2.1.11-43.0.1.el7.x86_64 Sun 19 Jan 2020 10:02:48 PM CST
+langtable-data-0.0.31-4.el7.noarch            Sun 19 Jan 2020 10:02:48 PM CST
+langtable-0.0.31-4.el7.noarch                 Sun 19 Jan 2020 10:02:48 PM CST
+grub2-common-2.02-0.80.0.3.el7.noarch         Sun 19 Jan 2020 10:02:48 PM CST
+bind-license-9.11.4-9.P2.el7.noarch           Sun 19 Jan 2020 10:02:48 PM CST
+libgcc-4.8.5-39.0.3.el7.x86_64                Sun 19 Jan 2020 10:02:47 PM CST
+gpg-pubkey-ec551f03-53619141                  Sun 19 Jan 2020 10:02:25 PM CST
+words-3.0-22.el7.noarch                       Sun 19 Jan 2020 09:54:50 PM CST
+man-pages-3.53-5.el7.noarch                   Sun 19 Jan 2020 09:54:50 PM CST
+redhat-indexhtml-7-13.0.1.el7.noarch          Sun 19 Jan 2020 09:54:47 PM CST
+rootfiles-8.1-11.el7.noarch                   Sun 19 Jan 2020 09:54:46 PM CST
+ivtv-firmware-20080701-26.el7.noarch          Sun 19 Jan 2020 09:54:46 PM CST
+uname26-1.0-1.el7.x86_64                      Sun 19 Jan 2020 09:54:43 PM CST
+traceroute-2.0.22-2.el7.x86_64                Sun 19 Jan 2020 09:54:43 PM CST
+setserial-2.17-33.el7.x86_64                  Sun 19 Jan 2020 09:54:43 PM CST
+rfkill-0.4-10.el7.x86_64                      Sun 19 Jan 2020 09:54:43 PM CST
+rdate-1.4-25.el7.x86_64                       Sun 19 Jan 2020 09:54:43 PM CST
+dosfstools-3.0.20-10.el7.x86_64               Sun 19 Jan 2020 09:54:43 PM CST
+compat-libf2c-34-3.4.6-32.el7.x86_64          Sun 19 Jan 2020 09:54:43 PM CST
+bridge-utils-1.5-9.el7.x86_64                 Sun 19 Jan 2020 09:54:43 PM CST
+time-1.7-45.el7.x86_64                        Sun 19 Jan 2020 09:54:42 PM CST
+strace-4.12-9.el7.x86_64                      Sun 19 Jan 2020 09:54:42 PM CST
+scl-utils-20130529-19.el7.x86_64              Sun 19 Jan 2020 09:54:42 PM CST
+lsof-4.87-6.el7.x86_64                        Sun 19 Jan 2020 09:54:42 PM CST
+libpng12-1.2.50-10.el7.x86_64                 Sun 19 Jan 2020 09:54:42 PM CST
+ed-1.9-4.el7.x86_64                           Sun 19 Jan 2020 09:54:42 PM CST
+compat-libstdc++-33-3.2.3-72.el7.x86_64       Sun 19 Jan 2020 09:54:42 PM CST
+compat-libcap1-1.10-7.el7.x86_64              Sun 19 Jan 2020 09:54:42 PM CST
+compat-db47-4.7.25-28.el7.x86_64              Sun 19 Jan 2020 09:54:42 PM CST
+zip-3.0-11.el7.x86_64                         Sun 19 Jan 2020 09:54:41 PM CST
+ntsysv-1.7.4-1.el7.x86_64                     Sun 19 Jan 2020 09:54:41 PM CST
+nano-2.3.1-10.el7.x86_64                      Sun 19 Jan 2020 09:54:41 PM CST
+compat-exiv2-023-0.23-2.el7.x86_64            Sun 19 Jan 2020 09:54:41 PM CST
+bc-1.06.95-13.el7.x86_64                      Sun 19 Jan 2020 09:54:41 PM CST
+tcsh-6.18.01-15.el7.x86_64                    Sun 19 Jan 2020 09:54:40 PM CST
+openssl098e-0.9.8e-29.el7_2.3.x86_64          Sun 19 Jan 2020 09:54:40 PM CST
+hunspell-en-0.20121024-6.el7.noarch           Sun 19 Jan 2020 09:54:40 PM CST
+xfsdump-3.1.7-1.el7.x86_64                    Sun 19 Jan 2020 09:54:39 PM CST
+pinfo-0.6.10-9.el7.x86_64                     Sun 19 Jan 2020 09:54:39 PM CST
+mtr-0.85-7.el7.x86_64                         Sun 19 Jan 2020 09:54:39 PM CST
+cyrus-sasl-plain-2.1.26-23.el7.x86_64         Sun 19 Jan 2020 09:54:39 PM CST
+compat-openldap-2.3.43-5.el7.x86_64           Sun 19 Jan 2020 09:54:39 PM CST
+bash-completion-2.1-6.el7.noarch              Sun 19 Jan 2020 09:54:39 PM CST
+yum-langpacks-0.4.2-7.el7.noarch              Sun 19 Jan 2020 09:54:38 PM CST
+man-db-2.6.3-11.el7.x86_64                    Sun 19 Jan 2020 09:54:38 PM CST
+ledmon-0.90-1.el7.x86_64                      Sun 19 Jan 2020 09:54:36 PM CST
+crda-3.18_2018.05.31-4.el7.x86_64             Sun 19 Jan 2020 09:54:36 PM CST
+at-3.1.13-24.el7.x86_64                       Sun 19 Jan 2020 09:54:36 PM CST
+aic94xx-firmware-30-6.el7.noarch              Sun 19 Jan 2020 09:54:36 PM CST
+psacct-6.6.1-13.el7.x86_64                    Sun 19 Jan 2020 09:54:32 PM CST
+postfix-2.10.1-7.el7.x86_64                   Sun 19 Jan 2020 09:54:31 PM CST
+pciutils-3.5.1-3.el7.x86_64                   Sun 19 Jan 2020 09:54:30 PM CST
+usbutils-007-5.el7.x86_64                     Sun 19 Jan 2020 09:54:24 PM CST
+mlocate-0.26-8.el7.x86_64                     Sun 19 Jan 2020 09:54:24 PM CST
+authconfig-6.2.8-30.el7.x86_64                Sun 19 Jan 2020 09:54:24 PM CST
+setuptool-1.19.11-8.el7.x86_64                Sun 19 Jan 2020 09:54:23 PM CST
+pm-utils-1.4.1-27.el7.x86_64                  Sun 19 Jan 2020 09:54:21 PM CST
+fprintd-pam-0.8.1-2.el7.x86_64                Sun 19 Jan 2020 09:54:21 PM CST
+yum-rhn-plugin-2.0.1-10.0.1.el7.noarch        Sun 19 Jan 2020 09:54:17 PM CST
+yum-plugin-ulninfo-0.2-13.el7.noarch          Sun 19 Jan 2020 09:54:17 PM CST
+virt-what-1.18-4.el7.x86_64                   Sun 19 Jan 2020 09:54:17 PM CST
+libestr-0.1.9-2.el7.x86_64                    Sun 19 Jan 2020 09:54:17 PM CST
+rhnsd-5.0.13-10.0.1.el7.x86_64                Sun 19 Jan 2020 09:54:16 PM CST
+python-pyudev-0.15-9.el7.noarch               Sun 19 Jan 2020 09:54:16 PM CST
+python-gudev-147.2-7.el7.x86_64               Sun 19 Jan 2020 09:54:16 PM CST
+fxload-2002_04_11-16.el7.x86_64               Sun 19 Jan 2020 09:54:14 PM CST
+ebtables-2.0.10-16.el7.x86_64                 Sun 19 Jan 2020 09:54:14 PM CST
+alsa-tools-firmware-1.1.0-1.el7.x86_64        Sun 19 Jan 2020 09:54:14 PM CST
+alsa-firmware-1.0.28-2.el7.noarch             Sun 19 Jan 2020 09:54:14 PM CST
+wpa_supplicant-2.6-12.el7.x86_64              Sun 19 Jan 2020 09:54:13 PM CST
+python-hwdata-1.7.3-4.el7.noarch              Sun 19 Jan 2020 09:54:12 PM CST
+libpciaccess-0.14-1.el7.x86_64                Sun 19 Jan 2020 09:54:11 PM CST
+kbd-1.15.5-15.el7.x86_64                      Sun 19 Jan 2020 09:54:11 PM CST
+kernel-3.10.0-957.el7.x86_64                  Sun 19 Jan 2020 09:54:09 PM CST
+python-slip-dbus-0.4.0-4.el7.noarch           Sun 19 Jan 2020 09:54:01 PM CST
+usb_modeswitch-data-20170806-1.el7.noarch     Sun 19 Jan 2020 09:54:00 PM CST
+usb_modeswitch-2.5.1-1.el7.x86_64             Sun 19 Jan 2020 09:54:00 PM CST
+libfprint-0.8.2-1.el7.x86_64                  Sun 19 Jan 2020 09:54:00 PM CST
+fprintd-0.8.1-2.el7.x86_64                    Sun 19 Jan 2020 09:54:00 PM CST
+dmraid-events-1.0.0.rc16-28.el7.x86_64        Sun 19 Jan 2020 09:54:00 PM CST
+dmraid-1.0.0.rc16-28.el7.x86_64               Sun 19 Jan 2020 09:54:00 PM CST
+os-prober-1.58-9.0.1.el7.x86_64               Sun 19 Jan 2020 09:53:58 PM CST
+libusbx-1.0.21-1.el7.x86_64                   Sun 19 Jan 2020 09:53:56 PM CST
+dbus-python-1.1.1-9.el7.x86_64                Sun 19 Jan 2020 09:53:56 PM CST
+dbus-glib-0.100-7.el7.x86_64                  Sun 19 Jan 2020 09:53:56 PM CST
+crontabs-1.11-6.20121102git.el7.noarch        Sun 19 Jan 2020 09:53:56 PM CST
+iputils-20160308-10.el7.x86_64                Sun 19 Jan 2020 09:53:55 PM CST
+satyr-0.13-15.el7.x86_64                      Sun 19 Jan 2020 09:53:54 PM CST
+polkit-pkla-compat-0.1-4.el7.x86_64           Sun 19 Jan 2020 09:53:54 PM CST
+sgpio-1.2.0.10-13.el7.x86_64                  Sun 19 Jan 2020 09:53:49 PM CST
+qrencode-libs-3.4.1-3.el7.x86_64              Sun 19 Jan 2020 09:53:49 PM CST
+libutempter-1.1.6-4.el7.x86_64                Sun 19 Jan 2020 09:53:49 PM CST
+libdaemon-0.14-7.el7.x86_64                   Sun 19 Jan 2020 09:53:49 PM CST
+ustr-1.0.4-16.el7.x86_64                      Sun 19 Jan 2020 09:53:48 PM CST
+libsemanage-2.5-14.el7.x86_64                 Sun 19 Jan 2020 09:53:48 PM CST
+libpipeline-1.2.3-3.el7.x86_64                Sun 19 Jan 2020 09:53:48 PM CST
+libpcap-1.5.3-11.el7.x86_64                   Sun 19 Jan 2020 09:53:48 PM CST
+python-urlgrabber-3.10-9.el7.noarch           Sun 19 Jan 2020 09:53:47 PM CST
+python-pycurl-7.19.0-19.el7.x86_64            Sun 19 Jan 2020 09:53:47 PM CST
+xmlrpc-c-client-1.32.5-1905.svn2451.el7.x86_64 Sun 19 Jan 2020 09:53:46 PM CST
+pygpgme-0.3-9.el7.x86_64                      Sun 19 Jan 2020 09:53:46 PM CST
+libuser-0.60-9.el7.x86_64                     Sun 19 Jan 2020 09:53:46 PM CST
+gpgme-1.3.2-5.el7.x86_64                      Sun 19 Jan 2020 09:53:46 PM CST
+gnupg2-2.0.22-5.el7_5.x86_64                  Sun 19 Jan 2020 09:53:46 PM CST
+fipscheck-lib-1.4.1-6.el7.x86_64              Sun 19 Jan 2020 09:53:45 PM CST
+fipscheck-1.4.1-6.el7.x86_64                  Sun 19 Jan 2020 09:53:45 PM CST
+mailx-12.5-19.el7.x86_64                      Sun 19 Jan 2020 09:53:44 PM CST
+logrotate-3.8.6-17.el7.x86_64                 Sun 19 Jan 2020 09:53:44 PM CST
+python-schedutils-0.4-6.el7.x86_64            Sun 19 Jan 2020 09:53:42 PM CST
+m2crypto-0.21.1-17.el7.x86_64                 Sun 19 Jan 2020 09:53:42 PM CST
+PyYAML-3.10-11.el7.x86_64                     Sun 19 Jan 2020 09:53:41 PM CST
+pyxattr-0.5.1-5.el7.x86_64                    Sun 19 Jan 2020 09:53:41 PM CST
+python-configobj-4.7.2-7.el7.noarch           Sun 19 Jan 2020 09:53:41 PM CST
+python2-futures-3.1.1-5.el7.noarch            Sun 19 Jan 2020 09:53:41 PM CST
+pyliblzma-0.5.3-11.el7.x86_64                 Sun 19 Jan 2020 09:53:41 PM CST
+rhnlib-2.5.65-8.0.1.el7.noarch                Sun 19 Jan 2020 09:53:40 PM CST
+python-slip-0.4.0-4.el7.noarch                Sun 19 Jan 2020 09:53:40 PM CST
+python-kitchen-1.1.1-5.el7.noarch             Sun 19 Jan 2020 09:53:40 PM CST
+python-gobject-base-3.22.0-1.el7_4.1.x86_64   Sun 19 Jan 2020 09:53:40 PM CST
+pyOpenSSL-0.13.1-4.el7.x86_64                 Sun 19 Jan 2020 09:53:40 PM CST
+libselinux-python-2.5-14.1.el7.x86_64         Sun 19 Jan 2020 09:53:40 PM CST
+yum-metadata-parser-1.1.4-10.el7.x86_64       Sun 19 Jan 2020 09:53:39 PM CST
+xdg-utils-1.1.0-0.17.20120809git.el7.noarch   Sun 19 Jan 2020 09:53:39 PM CST
+python-dmidecode-3.12.2-3.el7.x86_64          Sun 19 Jan 2020 09:53:39 PM CST
+gobject-introspection-1.56.1-1.el7.x86_64     Sun 19 Jan 2020 09:53:39 PM CST
+gettext-libs-0.19.8.1-2.el7.x86_64            Sun 19 Jan 2020 09:53:39 PM CST
+gettext-0.19.8.1-2.el7.x86_64                 Sun 19 Jan 2020 09:53:39 PM CST
+python-six-1.9.0-2.el7.noarch                 Sun 19 Jan 2020 09:53:23 PM CST
+python-iniparse-0.4-9.el7.noarch              Sun 19 Jan 2020 09:53:23 PM CST
+python-augeas-0.5.0-2.el7.noarch              Sun 19 Jan 2020 09:53:23 PM CST
+pam-1.1.8-22.el7.x86_64                       Sun 19 Jan 2020 09:53:23 PM CST
+pygobject2-2.28.6-11.el7.x86_64               Sun 19 Jan 2020 09:53:22 PM CST
+libpwquality-1.2.3-5.el7.x86_64               Sun 19 Jan 2020 09:53:22 PM CST
+libcroco-0.6.12-4.el7.x86_64                  Sun 19 Jan 2020 09:53:22 PM CST
+cracklib-dicts-2.9.0-11.el7.x86_64            Sun 19 Jan 2020 09:53:22 PM CST
+shared-mime-info-1.8-4.el7.x86_64             Sun 19 Jan 2020 09:53:21 PM CST
+python-decorator-3.4.0-3.el7.noarch           Sun 19 Jan 2020 09:53:21 PM CST
+pkgconfig-0.27.1-4.el7.x86_64                 Sun 19 Jan 2020 09:53:21 PM CST
+newt-python-0.52.15-4.el7.x86_64              Sun 19 Jan 2020 09:53:21 PM CST
+libxml2-python-2.9.1-6.0.1.el7_2.3.x86_64     Sun 19 Jan 2020 09:53:21 PM CST
+gzip-1.5-10.el7.x86_64                        Sun 19 Jan 2020 09:53:20 PM CST
+cyrus-sasl-lib-2.1.26-23.el7.x86_64           Sun 19 Jan 2020 09:53:20 PM CST
+cracklib-2.9.0-11.el7.x86_64                  Sun 19 Jan 2020 09:53:20 PM CST
+p11-kit-trust-0.23.5-3.el7.x86_64             Sun 19 Jan 2020 09:53:14 PM CST
+lsscsi-0.27-6.el7.x86_64                      Sun 19 Jan 2020 09:53:14 PM CST
+libtasn1-4.10-1.el7.x86_64                    Sun 19 Jan 2020 09:53:14 PM CST
+libsysfs-2.1.0-16.el7.x86_64                  Sun 19 Jan 2020 09:53:14 PM CST
+libfastjson-0.99.4-3.el7.x86_64               Sun 19 Jan 2020 09:53:14 PM CST
+compat-glibc-headers-2.12-4.el7.x86_64        Sun 19 Jan 2020 09:53:14 PM CST
+compat-glibc-2.12-4.el7.x86_64                Sun 19 Jan 2020 09:53:14 PM CST
+pth-2.0.7-23.el7.x86_64                       Sun 19 Jan 2020 09:53:12 PM CST
+pixman-0.34.0-1.el7.x86_64                    Sun 19 Jan 2020 09:53:12 PM CST
+libyaml-0.1.4-11.el7_0.x86_64                 Sun 19 Jan 2020 09:53:12 PM CST
+libseccomp-2.3.1-3.el7.x86_64                 Sun 19 Jan 2020 09:53:12 PM CST
+hardlink-1.0-19.el7.x86_64                    Sun 19 Jan 2020 09:53:12 PM CST
+libverto-0.2.5-4.el7.x86_64                   Sun 19 Jan 2020 09:53:11 PM CST
+snappy-1.1.0-3.el7.x86_64                     Sun 19 Jan 2020 09:53:10 PM CST
+ncurses-5.9-14.20130511.el7_4.x86_64          Sun 19 Jan 2020 09:53:10 PM CST
+mozjs17-17.0.0-20.el7.x86_64                  Sun 19 Jan 2020 09:53:10 PM CST
+libselinux-utils-2.5-14.1.el7.x86_64          Sun 19 Jan 2020 09:53:10 PM CST
+libproxy-0.4.11-11.el7.x86_64                 Sun 19 Jan 2020 09:53:10 PM CST
+libmodman-2.0.1-8.el7.x86_64                  Sun 19 Jan 2020 09:53:10 PM CST
+libconfig-1.4.9-5.el7.x86_64                  Sun 19 Jan 2020 09:53:10 PM CST
+gmp-6.0.0-15.el7.x86_64                       Sun 19 Jan 2020 09:53:10 PM CST
+boost-date-time-1.53.0-27.el7.x86_64          Sun 19 Jan 2020 09:53:10 PM CST
+xml-common-0.6.3-39.el7.noarch                Sun 19 Jan 2020 09:53:09 PM CST
+tcp_wrappers-7.6-77.el7.x86_64                Sun 19 Jan 2020 09:53:09 PM CST
+tar-1.26-35.el7.x86_64                        Sun 19 Jan 2020 09:53:09 PM CST
+pinentry-0.8.1-17.el7.x86_64                  Sun 19 Jan 2020 09:53:09 PM CST
+libpng-1.5.13-7.el7_2.x86_64                  Sun 19 Jan 2020 09:53:09 PM CST
+libdwarf-20130207-4.el7.x86_64                Sun 19 Jan 2020 09:53:09 PM CST
+bzip2-1.0.6-13.el7.x86_64                     Sun 19 Jan 2020 09:53:09 PM CST
+attr-2.4.46-13.el7.x86_64                     Sun 19 Jan 2020 09:53:09 PM CST
+acl-2.2.51-14.el7.x86_64                      Sun 19 Jan 2020 09:53:09 PM CST
+yajl-2.0.4-4.el7.x86_64                       Sun 19 Jan 2020 09:53:08 PM CST
+sysvinit-tools-2.88-14.dsf.el7.x86_64         Sun 19 Jan 2020 09:53:08 PM CST
+lzo-2.06-8.el7.x86_64                         Sun 19 Jan 2020 09:53:08 PM CST
+libnfnetlink-1.0.1-4.el7.x86_64               Sun 19 Jan 2020 09:53:08 PM CST
+libnetfilter_conntrack-1.0.6-1.el7_3.x86_64   Sun 19 Jan 2020 09:53:08 PM CST
+less-458-9.el7.x86_64                         Sun 19 Jan 2020 09:53:08 PM CST
+keyutils-libs-1.5.8-3.el7.x86_64              Sun 19 Jan 2020 09:53:08 PM CST
+iw-4.3-2.el7.x86_64                           Sun 19 Jan 2020 09:53:08 PM CST
+hunspell-en-GB-0.20121024-6.el7.noarch        Sun 19 Jan 2020 09:53:08 PM CST
+boost-thread-1.53.0-27.el7.x86_64             Sun 19 Jan 2020 09:53:08 PM CST
+slang-2.2.4-11.el7.x86_64                     Sun 19 Jan 2020 09:53:07 PM CST
+newt-0.52.15-4.el7.x86_64                     Sun 19 Jan 2020 09:53:07 PM CST
+libunistring-0.9.3-9.el7.x86_64               Sun 19 Jan 2020 09:53:07 PM CST
+libnl-1.1.4-3.el7.x86_64                      Sun 19 Jan 2020 09:53:07 PM CST
+libedit-3.0-12.20121213cvs.el7.x86_64         Sun 19 Jan 2020 09:53:07 PM CST
+libassuan-2.1.0-3.el7.x86_64                  Sun 19 Jan 2020 09:53:07 PM CST
+jansson-2.10-1.el7.x86_64                     Sun 19 Jan 2020 09:53:07 PM CST
+boost-system-1.53.0-27.el7.x86_64             Sun 19 Jan 2020 09:53:07 PM CST
+pciutils-libs-3.5.1-3.el7.x86_64              Sun 19 Jan 2020 09:53:06 PM CST
+p11-kit-0.23.5-3.el7.x86_64                   Sun 19 Jan 2020 09:53:06 PM CST
+libxslt-1.1.28-5.0.1.el7.x86_64               Sun 19 Jan 2020 09:53:06 PM CST
+libnl3-cli-3.2.28-4.el7.x86_64                Sun 19 Jan 2020 09:53:06 PM CST
+libmnl-1.0.3-7.el7.x86_64                     Sun 19 Jan 2020 09:53:06 PM CST
+perl-Time-Local-1.2300-2.el7.noarch           Sun 19 Jan 2020 09:53:04 PM CST
+perl-threads-shared-1.43-6.el7.x86_64         Sun 19 Jan 2020 09:53:04 PM CST
+perl-Socket-2.010-4.el7.x86_64                Sun 19 Jan 2020 09:53:04 PM CST
+perl-Scalar-List-Utils-1.27-248.el7.x86_64    Sun 19 Jan 2020 09:53:04 PM CST
+perl-Pod-Simple-3.28-4.el7.noarch             Sun 19 Jan 2020 09:53:04 PM CST
+perl-PathTools-3.40-5.el7.x86_64              Sun 19 Jan 2020 09:53:04 PM CST
+perl-Getopt-Long-2.40-3.el7.noarch            Sun 19 Jan 2020 09:53:04 PM CST
+perl-File-Temp-0.23.01-3.el7.noarch           Sun 19 Jan 2020 09:53:04 PM CST
+perl-File-Path-2.09-2.el7.noarch              Sun 19 Jan 2020 09:53:04 PM CST
+perl-Exporter-5.68-3.el7.noarch               Sun 19 Jan 2020 09:53:04 PM CST
+perl-constant-1.27-2.el7.noarch               Sun 19 Jan 2020 09:53:04 PM CST
+perl-Carp-1.26-244.el7.noarch                 Sun 19 Jan 2020 09:53:04 PM CST
+perl-Time-HiRes-1.9725-3.el7.x86_64           Sun 19 Jan 2020 09:53:03 PM CST
+perl-threads-1.87-4.el7.x86_64                Sun 19 Jan 2020 09:53:03 PM CST
+perl-Text-ParseWords-3.29-4.el7.noarch        Sun 19 Jan 2020 09:53:03 PM CST
+perl-Storable-2.45-3.el7.x86_64               Sun 19 Jan 2020 09:53:03 PM CST
+perl-Pod-Usage-1.63-3.el7.noarch              Sun 19 Jan 2020 09:53:03 PM CST
+perl-Pod-Perldoc-3.20-4.el7.noarch            Sun 19 Jan 2020 09:53:03 PM CST
+perl-podlators-2.5.1-3.el7.noarch             Sun 19 Jan 2020 09:53:03 PM CST
+perl-parent-0.225-244.el7.noarch              Sun 19 Jan 2020 09:53:03 PM CST
+perl-HTTP-Tiny-0.033-3.el7.noarch             Sun 19 Jan 2020 09:53:03 PM CST
+perl-Filter-1.49-3.el7.x86_64                 Sun 19 Jan 2020 09:53:03 PM CST
+perl-Encode-2.51-7.el7.x86_64                 Sun 19 Jan 2020 09:53:03 PM CST
+gdbm-1.10-8.el7.x86_64                        Sun 19 Jan 2020 09:53:03 PM CST
+xz-5.2.2-1.el7.x86_64                         Sun 19 Jan 2020 09:53:02 PM CST
+xmlrpc-c-1.32.5-1905.svn2451.el7.x86_64       Sun 19 Jan 2020 09:53:02 PM CST
+libaio-0.3.109-13.el7.x86_64                  Sun 19 Jan 2020 09:53:02 PM CST
+hunspell-en-US-0.20121024-6.el7.noarch        Sun 19 Jan 2020 09:53:02 PM CST
+hunspell-1.3.2-15.el7.x86_64                  Sun 19 Jan 2020 09:53:02 PM CST
+groff-base-1.22.2-8.el7.x86_64                Sun 19 Jan 2020 09:53:02 PM CST
+file-libs-5.11-35.el7.x86_64                  Sun 19 Jan 2020 09:53:02 PM CST
+file-5.11-35.el7.x86_64                       Sun 19 Jan 2020 09:53:02 PM CST
+which-2.20-7.el7.x86_64                       Sun 19 Jan 2020 09:53:01 PM CST
+tcp_wrappers-libs-7.6-77.el7.x86_64           Sun 19 Jan 2020 09:53:01 PM CST
+lua-5.1.4-15.el7.x86_64                       Sun 19 Jan 2020 09:53:01 PM CST
+libtar-1.2.11-29.el7.x86_64                   Sun 19 Jan 2020 09:53:01 PM CST
+libnl3-3.2.28-4.el7.x86_64                    Sun 19 Jan 2020 09:53:01 PM CST
+libidn-1.28-4.el7.x86_64                      Sun 19 Jan 2020 09:53:01 PM CST
+libffi-3.0.13-18.el7.x86_64                   Sun 19 Jan 2020 09:53:01 PM CST
+gawk-4.0.2-4.el7_3.1.x86_64                   Sun 19 Jan 2020 09:53:01 PM CST
+findutils-4.5.11-6.el7.x86_64                 Sun 19 Jan 2020 09:53:01 PM CST
+expat-2.1.0-10.el7_3.x86_64                   Sun 19 Jan 2020 09:53:01 PM CST
+cpio-2.11-27.el7.x86_64                       Sun 19 Jan 2020 09:53:01 PM CST
+libgpg-error-1.12-3.el7.x86_64                Sun 19 Jan 2020 09:53:00 PM CST
+libgcrypt-1.5.3-14.el7.x86_64                 Sun 19 Jan 2020 09:53:00 PM CST
+libcap-ng-0.7.5-4.el7.x86_64                  Sun 19 Jan 2020 09:53:00 PM CST
+libattr-2.4.46-13.el7.x86_64                  Sun 19 Jan 2020 09:53:00 PM CST
+libacl-2.2.51-14.el7.x86_64                   Sun 19 Jan 2020 09:53:00 PM CST
+json-c-0.11-4.el7_0.x86_64                    Sun 19 Jan 2020 09:53:00 PM CST
+grep-2.20-3.el7.x86_64                        Sun 19 Jan 2020 09:53:00 PM CST
+zlib-1.2.7-18.el7.x86_64                      Sun 19 Jan 2020 09:52:59 PM CST
+xz-libs-5.2.2-1.el7.x86_64                    Sun 19 Jan 2020 09:52:59 PM CST
+sed-4.2.2-5.el7.x86_64                        Sun 19 Jan 2020 09:52:59 PM CST
+popt-1.13-16.el7.x86_64                       Sun 19 Jan 2020 09:52:59 PM CST
+pcre-8.32-17.el7.x86_64                       Sun 19 Jan 2020 09:52:59 PM CST
+libxml2-2.9.1-6.0.1.el7_2.3.x86_64            Sun 19 Jan 2020 09:52:59 PM CST
+libselinux-2.5-14.1.el7.x86_64                Sun 19 Jan 2020 09:52:59 PM CST
+info-5.1-5.el7.x86_64                         Sun 19 Jan 2020 09:52:59 PM CST
+chkconfig-1.7.4-1.el7.x86_64                  Sun 19 Jan 2020 09:52:59 PM CST
+bzip2-libs-1.0.6-13.el7.x86_64                Sun 19 Jan 2020 09:52:59 PM CST
+ncurses-libs-5.9-14.20130511.el7_4.x86_64     Sun 19 Jan 2020 09:52:58 PM CST
+libsepol-2.5-10.el7.x86_64                    Sun 19 Jan 2020 09:52:58 PM CST
+setup-2.8.71-10.el7.noarch                    Sun 19 Jan 2020 09:52:52 PM CST
+filesystem-3.2-25.el7.x86_64                  Sun 19 Jan 2020 09:52:52 PM CST
+basesystem-10.0-7.0.1.el7.noarch              Sun 19 Jan 2020 09:52:52 PM CST
+ncurses-base-5.9-14.20130511.el7_4.noarch     Sun 19 Jan 2020 09:52:51 PM CST
+compat-db-headers-4.7.25-28.el7.noarch        Sun 19 Jan 2020 09:52:51 PM CST
+kbd-misc-1.15.5-15.el7.noarch                 Sun 19 Jan 2020 09:52:50 PM CST
+kbd-legacy-1.15.5-15.el7.noarch               Sun 19 Jan 2020 09:52:50 PM CST
+emacs-filesystem-24.3-22.el7.noarch           Sun 19 Jan 2020 09:52:50 PM CST
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Kernel Parameters</a><ul><li><PRE>
+# sysctl settings are defined through files in
+# /usr/lib/sysctl.d/, /run/sysctl.d/, and /etc/sysctl.d/.
+#
+# Vendors settings live in /usr/lib/sysctl.d/.
+# To override a whole file, create a new file with the same in
+# /etc/sysctl.d/ and put new settings there. To override
+# only specific settings, add a file with a lexically later
+# name in /etc/sysctl.d/ and put new settings there.
+#
+# For more information, see sysctl.conf(5) and sysctl.d(5).
+
+# oracle-rdbms-server-12cR1-preinstall setting for fs.file-max is 6815744
+fs.file-max = 6815744
+
+# oracle-rdbms-server-12cR1-preinstall setting for kernel.sem is '250 32000 100 128'
+kernel.sem = 250 32000 100 128
+
+# oracle-rdbms-server-12cR1-preinstall setting for kernel.shmmni is 4096
+kernel.shmmni = 4096
+
+# oracle-rdbms-server-12cR1-preinstall setting for kernel.shmall is 1073741824 on x86_64
+kernel.shmall = 1073741824
+
+# oracle-rdbms-server-12cR1-preinstall setting for kernel.shmmax is 4398046511104 on x86_64
+kernel.shmmax = 4398046511104
+
+# oracle-rdbms-server-12cR1-preinstall setting for kernel.panic_on_oops is 1 per Orabug 19212317
+kernel.panic_on_oops = 1
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.core.rmem_default is 262144
+net.core.rmem_default = 262144
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.core.rmem_max is 4194304
+net.core.rmem_max = 4194304
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.core.wmem_default is 262144
+net.core.wmem_default = 262144
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.core.wmem_max is 1048576
+net.core.wmem_max = 1048576
+
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.ipv4.conf.default.rp_filter is 2
+net.ipv4.conf.default.rp_filter = 2
+
+# oracle-rdbms-server-12cR1-preinstall setting for fs.aio-max-nr is 1048576
+fs.aio-max-nr = 1048576
+
+# oracle-rdbms-server-12cR1-preinstall setting for net.ipv4.ip_local_port_range is 9000 65500
+net.ipv4.ip_local_port_range = 9000 65500
+
+
+fs.protected_hardlinks = 1
+fs.protected_symlinks = 1
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 2
+kernel.sysrq = 0
+net.ipv4.conf.all.forwarding = 0
+net.ipv4.conf.all.log_martians = 1
+net.ipv4.conf.all.rp_filter = 1
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.default.log_martians = 1
+net.ipv4.tcp_timestamps = 0
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+net.ipv4.conf.all.accept_redirects = 0
+kernel.yama.ptrace_scope = 2
+</PRE></li></ul>
+</ul></li>
+<li><a href="#" onclick="toggleBullet(this)">Network Config</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Interface Settings</a><ul><li><PRE>
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 189.206.1.170  netmask 255.255.255.248  broadcast 189.206.1.175
+        inet6 fe80::c19:6c84:8244:fbe3  prefixlen 64  scopeid 0x20<link>
+        ether 00:1a:4a:3e:68:83  txqueuelen 1000  (Ethernet)
+        RX packets 509326232  bytes 61360627847 (57.1 GiB)
+        RX errors 0  dropped 3423774  overruns 0  frame 0
+        TX packets 104734108  bytes 161004218366 (149.9 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.41  netmask 255.255.252.0  broadcast 192.168.3.255
+        inet6 fe80::abf:1ec3:f12b:8064  prefixlen 64  scopeid 0x20<link>
+        ether 00:1a:4a:3e:68:86  txqueuelen 1000  (Ethernet)
+        RX packets 672576200  bytes 59728343026 (55.6 GiB)
+        RX errors 0  dropped 3423774  overruns 0  frame 0
+        TX packets 106576726  bytes 1133400981531 (1.0 TiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 228813677  bytes 258694998728 (240.9 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 228813677  bytes 258694998728 (240.9 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">DNS Servers</a><ul><li><PRE>
+nameserver 207.248.224.71
+nameserver 207.248.224.72
+nameserver 8.8.4.4
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Route</a><ul><li><PRE>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         189.206.1.169   0.0.0.0         UG    100    0        0 eth0
+0.0.0.0         192.168.1.59    0.0.0.0         UG    101    0        0 eth1
+189.206.1.168   0.0.0.0         255.255.255.248 U     100    0        0 eth0
+192.168.0.0     0.0.0.0         255.255.252.0   U     101    0        0 eth1
+<li><a href="#" onclick="toggleBullet(this)">Hosts</a><ul><li><PRE>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.1.41 appspreprod appspreprod.i-condor.com apexqa apexqa.i-condor.com
+#192.168.1.41 apexqa apexqa.i-condor.com apppreprod.i-condor.com
+#192.168.1.11 apexqa apexqa.i-condor.com
+</PRE></li></ul>
+</ul></li>
+<li><a href="#" onclick="toggleBullet(this)">Server Status</a><ul>
+<li><a href="#" onclick="toggleBullet(this)">Processor/RAM Usage</a><ul><li><PRE>
+top - 23:50:11 up 326 days, 13:03, 37 users,  load average: 0.07, 0.06, 0.04
+Tasks: 515 total,   2 running, 435 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.4 us,  2.8 sy,  0.0 ni, 95.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 16412016 total,  7776404 free,  1819816 used,  6815796 buff/cache
+KiB Swap:  5242876 total,  5037820 free,   205056 used.  8732172 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+24155 root      20   0  162296   4616   3768 R   5.9  0.0   0:00.02 top
+    1 root      20   0  202292   6136   3800 S   0.0  0.0 108:29.37 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:11.85 kthreadd
+    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:0H
+    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.04 mm_percpu_wq
+    7 root      20   0       0      0      0 S   0.0  0.0   1:22.02 ksoftirqd/0
+    8 root      20   0       0      0      0 R   0.0  0.0 129:31.12 rcu_sched
+    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh
+   10 root      rt   0       0      0      0 S   0.0  0.0   0:12.89 migration/0
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:49.02 watchdog/0
+   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0
+   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1
+   14 root      rt   0       0      0      0 S   0.0  0.0   0:47.58 watchdog/1
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Running Processes</a><ul><li><PRE>
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         2     0  0  2020 ?        00:00:11 [kthreadd]
+root         4     2  0  2020 ?        00:00:00   [kworker/0:0H]
+root         6     2  0  2020 ?        00:00:00   [mm_percpu_wq]
+root         7     2  0  2020 ?        00:01:22   [ksoftirqd/0]
+root         8     2  0  2020 ?        02:09:31   [rcu_sched]
+root         9     2  0  2020 ?        00:00:00   [rcu_bh]
+root        10     2  0  2020 ?        00:00:12   [migration/0]
+root        11     2  0  2020 ?        00:00:49   [watchdog/0]
+root        12     2  0  2020 ?        00:00:00   [cpuhp/0]
+root        13     2  0  2020 ?        00:00:00   [cpuhp/1]
+root        14     2  0  2020 ?        00:00:47   [watchdog/1]
+root        15     2  0  2020 ?        00:00:12   [migration/1]
+root        16     2  0  2020 ?        00:00:47   [ksoftirqd/1]
+root        18     2  0  2020 ?        00:00:00   [kworker/1:0H]
+root        19     2  0  2020 ?        00:00:00   [cpuhp/2]
+root        20     2  0  2020 ?        00:00:44   [watchdog/2]
+root        21     2  0  2020 ?        00:00:11   [migration/2]
+root        22     2  0  2020 ?        00:00:32   [ksoftirqd/2]
+root        24     2  0  2020 ?        00:00:00   [kworker/2:0H]
+root        25     2  0  2020 ?        00:00:00   [cpuhp/3]
+root        26     2  0  2020 ?        00:00:44   [watchdog/3]
+root        27     2  0  2020 ?        00:00:12   [migration/3]
+root        28     2  0  2020 ?        00:00:29   [ksoftirqd/3]
+root        30     2  0  2020 ?        00:00:00   [kworker/3:0H]
+root        34     2  0  2020 ?        00:00:00   [kdevtmpfs]
+root        35     2  0  2020 ?        00:00:00   [netns]
+root        36     2  0  2020 ?        00:00:25   [khungtaskd]
+root        37     2  0  2020 ?        00:00:00   [oom_reaper]
+root        38     2  0  2020 ?        00:00:00   [writeback]
+root        39     2  0  2020 ?        00:00:24   [kcompactd0]
+root        40     2  0  2020 ?        00:00:00   [ksmd]
+root        41     2  0  2020 ?        00:00:00   [crypto]
+root        42     2  0  2020 ?        00:00:00   [kintegrityd]
+root        43     2  0  2020 ?        00:00:00   [kblockd]
+root        44     2  0  2020 ?        00:00:00   [md]
+root        45     2  0  2020 ?        00:00:00   [edac-poller]
+root        46     2  0  2020 ?        00:00:00   [devfreq_wq]
+root        47     2  0  2020 ?        00:00:00   [watchdogd]
+root        49     2  0  2020 ?        00:01:41   [kauditd]
+root        50     2  0  2020 ?        00:09:22   [kswapd0:0]
+root       102     2  0  2020 ?        00:00:00   [kthrotld]
+root       103     2  0  2020 ?        00:00:00   [acpi_thermal_pm]
+root       104     2  0  2020 ?        00:00:00   [kmpath_rdacd]
+root       105     2  0  2020 ?        00:00:00   [kaluad]
+root       106     2  0  2020 ?        00:00:00   [bcache]
+root       107     2  0  2020 ?        00:00:00   [ipv6_addrconf]
+root       108     2  0  2020 ?        00:00:00   [dsa_ordered]
+root       109     2  0  2020 ?        00:00:00   [kstrp]
+root       130     2  0  2020 ?        00:00:00   [charger_manager]
+root       345     2  0  2020 ?        00:00:01   [ata_sff]
+root       356     2  0  2020 ?        00:00:00   [scsi_eh_0]
+root       357     2  0  2020 ?        00:00:00   [scsi_tmf_0]
+root       358     2  0  2020 ?        00:00:00   [scsi_eh_1]
+root       359     2  0  2020 ?        00:00:00   [scsi_tmf_1]
+root       479     2  0  2020 ?        00:00:00   [ttm_swap]
+root       622     2  0  2020 ?        00:12:08   [kworker/3:1H]
+root       628     2  0  2020 ?        00:00:00   [scsi_eh_2]
+root       629     2  0  2020 ?        00:00:00   [scsi_tmf_2]
+root       630     2  0  2020 ?        00:08:42   [kworker/2:1H]
+root       719     2  0  2020 ?        00:00:00   [kdmflush]
+root       720     2  0  2020 ?        00:00:00   [bioset]
+root       731     2  0  2020 ?        00:00:00   [kdmflush]
+root       732     2  0  2020 ?        00:00:00   [bioset]
+root       744     2  0  2020 ?        00:00:00   [xfsalloc]
+root       745     2  0  2020 ?        00:00:00   [xfs_mru_cache]
+root       746     2  0  2020 ?        00:00:00   [xfs-buf/dm-0]
+root       747     2  0  2020 ?        00:00:00   [xfs-data/dm-0]
+root       748     2  0  2020 ?        00:00:00   [xfs-conv/dm-0]
+root       749     2  0  2020 ?        00:00:00   [xfs-cil/dm-0]
+root       750     2  0  2020 ?        00:00:00   [xfs-reclaim/dm-]
+root       751     2  0  2020 ?        00:00:00   [xfs-log/dm-0]
+root       752     2  0  2020 ?        00:00:00   [xfs-eofblocks/d]
+root       753     2  0  2020 ?        01:07:56   [xfsaild/dm-0]
+root      1220     2  0  2020 ?        00:00:00   [xfs-buf/vda1]
+root      1221     2  0  2020 ?        00:00:00   [xfs-data/vda1]
+root      1222     2  0  2020 ?        00:00:00   [xfs-conv/vda1]
+root      1223     2  0  2020 ?        00:00:00   [xfs-cil/vda1]
+root      1224     2  0  2020 ?        00:00:00   [xfs-reclaim/vda]
+root      1225     2  0  2020 ?        00:00:00   [xfs-log/vda1]
+root      1226     2  0  2020 ?        00:00:00   [xfs-eofblocks/v]
+root      1227     2  0  2020 ?        00:00:00   [xfsaild/vda1]
+root      1244     2  0  2020 ?        00:00:00   [kdmflush]
+root      1245     2  0  2020 ?        00:00:00   [bioset]
+root      1258     2  0  2020 ?        00:14:44   [kworker/1:1H]
+root      1264     2  0  2020 ?        00:00:00   [xfs-buf/dm-2]
+root      1265     2  0  2020 ?        00:00:00   [xfs-data/dm-2]
+root      1266     2  0  2020 ?        00:00:00   [xfs-conv/dm-2]
+root      1268     2  0  2020 ?        00:00:00   [xfs-cil/dm-2]
+root      1269     2  0  2020 ?        00:00:00   [xfs-reclaim/dm-]
+root      1270     2  0  2020 ?        00:00:00   [xfs-log/dm-2]
+root      1271     2  0  2020 ?        00:00:00   [xfs-eofblocks/d]
+root      1272     2  0  2020 ?        01:10:20   [xfsaild/dm-2]
+root      1302     2  0  2020 ?        00:16:50   [kworker/0:1H]
+root      1308     2  0  2020 ?        00:00:00   [rpciod]
+root      1309     2  0  2020 ?        00:00:00   [xprtiod]
+root      6167     2  0  2020 ?        00:00:00   [nfsiod]
+root      6174     2  0  2020 ?        00:00:00   [NFSv4 callback]
+root     24602     2  0 21:52 ?        00:00:00   [kworker/u32:0]
+root     26618     2  0 22:00 ?        00:00:00   [kworker/3:1]
+root      4915     2  0 22:37 ?        00:00:00   [kworker/0:1]
+root     13192     2  0 23:10 ?        00:00:00   [kworker/2:1]
+root     19664     2  0 23:32 ?        00:00:00   [kworker/1:1]
+root     21153     2  0 23:38 ?        00:00:00   [kworker/1:0]
+root     21160     2  0 23:38 ?        00:00:00   [kworker/u32:2]
+root     21281     2  0 23:40 ?        00:00:00   [kworker/3:2]
+root     21288     2  0 23:40 ?        00:00:00   [kworker/2:0]
+root     22491     2  0 23:43 ?        00:00:00   [kworker/0:0]
+root     23153     2  0 23:46 ?        00:00:00   [kworker/1:2]
+root     23843     2  0 23:49 ?        00:00:00   [kworker/0:2]
+root     24075     2  0 23:50 ?        00:00:00   [kworker/2:2]
+root         1     0  0  2020 ?        01:48:29 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root       835     1  0  2020 ?        00:39:37   /usr/lib/systemd/systemd-journald
+root       862     1  0  2020 ?        00:00:00   /usr/sbin/lvmetad -f
+root       879     1  0  2020 ?        00:00:00   /usr/lib/systemd/systemd-udevd
+root      1311     1  0  2020 ?        00:08:14   /sbin/auditd
+root      1334     1  0  2020 ?        00:26:43   /sbin/rngd -f
+polkitd   1335     1  0  2020 ?        00:01:11   /usr/lib/polkit-1/polkitd --no-debug
+root      1336     1  0  2020 ?        00:00:10   /usr/sbin/smartd -n -q never
+libstor+  1338     1  0  2020 ?        00:00:43   /usr/bin/lsmd -d
+dbus      1339     1  0  2020 ?        00:05:46   /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root      1352     1  0  2020 ?        00:14:32   /usr/sbin/irqbalance --foreground
+root      1353     1  0  2020 ?        00:03:04   /usr/lib/systemd/systemd-logind
+root      1357     1  0  2020 ?        00:00:00   /usr/bin/qemu-ga --method=virtio-serial --path=/dev/virtio-ports/org.qemu.guest_agent.0 --blacklist=guest-file-open,guest-file-close,guest-file-read,guest-file-write,guest-file-seek,guest-file-flush,guest-exec,guest-exec-status -F/etc/qemu-ga/fsfreeze-hook
+rpc       1362     1  0  2020 ?        00:00:27   /sbin/rpcbind -w
+root      1363     1  0  2020 ?        00:00:34   /usr/bin/python2 -Es /usr/sbin/firewalld --nofork --nopid
+root      1371     1  0  2020 ?        00:05:58   /usr/sbin/NetworkManager --no-daemon
+root      1372     1  0  2020 ?        00:00:00   /usr/sbin/gssproxy -D
+root      1385     1  0  2020 ?        00:00:00   /usr/sbin/atd -f
+root      1388     1  0  2020 ?        00:01:04   /usr/sbin/crond -n
+root      1748     1  0  2020 ?        00:28:58   /usr/sbin/rsyslogd -n
+root      1750     1  0  2020 ?        00:43:25   /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+root      1759     1  0  2020 ?        00:00:01   rhnsd
+root      1989     1  0  2020 ?        00:02:14   /usr/libexec/postfix/master -w
+postfix   2006  1989  0  2020 ?        00:00:30     qmgr -l -t unix -u
+postfix   8360  1989  0 22:51 ?        00:00:00     pickup -l -t unix -u
+oracle    4397     1  0  2020 ?        00:35:01   ora_pmon_preproda
+oracle    4399     1  0  2020 ?        01:25:37   ora_psp0_preproda
+oracle    4402     1  0  2020 ?        01:14:26   ora_vktm_preproda
+oracle    4406     1  0  2020 ?        00:34:39   ora_gen0_preproda
+oracle    4410     1  0  2020 ?        00:18:55   ora_mman_preproda
+oracle    4412     1  0  2020 ?        00:19:21   ora_diag_preproda
+oracle    4414     1  0  2020 ?        01:45:29   ora_dbrm_preproda
+oracle    4416     1  0  2020 ?        03:34:31   ora_vkrm_preproda
+oracle    4418     1  0  2020 ?        05:41:31   ora_dia0_preproda
+oracle    4420     1  0  2020 ?        00:55:07   ora_dbw0_preproda
+oracle    4422     1  0  2020 ?        01:27:06   ora_lgwr_preproda
+oracle    4424     1  0  2020 ?        02:01:28   ora_ckpt_preproda
+oracle    4426     1  0  2020 ?        01:13:53   ora_lg00_preproda
+oracle    4428     1  0  2020 ?        00:16:14   ora_smon_preproda
+oracle    4430     1  0  2020 ?        00:08:14   ora_lg01_preproda
+oracle    4432     1  0  2020 ?        00:04:05   ora_reco_preproda
+oracle    4434     1  0  2020 ?        00:11:41   ora_lreg_preproda
+oracle    4436     1  0  2020 ?        00:13:42   ora_pxmn_preproda
+oracle    4438     1  0  2020 ?        03:54:27   ora_mmon_preproda
+oracle    4440     1  0  2020 ?        06:55:01   ora_mmnl_preproda
+oracle    4442     1  0  2020 ?        00:04:30   ora_d000_preproda
+oracle    4444     1  0  2020 ?        00:04:14   ora_s000_preproda
+oracle    4464     1  0  2020 ?        00:07:14   ora_p000_preproda
+oracle    4466     1  0  2020 ?        00:07:00   ora_p001_preproda
+oracle    4468     1  0  2020 ?        00:07:20   ora_p002_preproda
+oracle    4471     1  0  2020 ?        00:04:49   ora_tmon_preproda
+oracle    4473     1  0  2020 ?        00:05:52   ora_arc0_preproda
+oracle    4475     1  0  2020 ?        00:06:03   ora_arc1_preproda
+oracle    4477     1  0  2020 ?        00:06:39   ora_arc2_preproda
+oracle    4479     1  0  2020 ?        00:05:52   ora_arc3_preproda
+oracle    4481     1  0  2020 ?        00:14:05   ora_tt00_preproda
+oracle    4485     1  0  2020 ?        01:05:57   ora_smco_preproda
+oracle    4495     1  0  2020 ?        00:03:51   ora_aqpc_preproda
+oracle    4501     1  0  2020 ?        00:07:04   ora_p003_preproda
+oracle    4503     1  0  2020 ?        00:07:28   ora_p004_preproda
+oracle    4505     1  0  2020 ?        00:07:02   ora_p005_preproda
+oracle    4507     1  0  2020 ?        00:07:36   ora_p006_preproda
+oracle    4509     1  0  2020 ?        00:07:23   ora_p007_preproda
+oracle    4511     1  0  2020 ?        00:07:14   ora_p008_preproda
+oracle    4513     1  0  2020 ?        00:07:19   ora_p009_preproda
+oracle    4515     1  0  2020 ?        00:07:01   ora_p00a_preproda
+oracle    4517     1  0  2020 ?        00:07:10   ora_p00b_preproda
+oracle    4519     1  0  2020 ?        00:07:05   ora_p00c_preproda
+oracle    4521     1  0  2020 ?        00:07:06   ora_p00d_preproda
+oracle    4523     1  0  2020 ?        00:07:26   ora_p00e_preproda
+oracle    4525     1  0  2020 ?        00:07:04   ora_p00f_preproda
+oracle    4527     1  0  2020 ?        01:14:54   ora_cjq0_preproda
+oracle    4721     1  0  2020 ?        00:04:43   ora_qm02_preproda
+oracle    4727     1  0  2020 ?        00:03:51   ora_q003_preproda
+oracle    4848     1  0  2020 ?        00:35:36   /u01/app/oracle/product/12.2.0.1/APEX_PREPROD/bin/tnslsnr LISTENER -inherit
+oracle    7860     1  0  2020 ?        00:08:43   ora_w000_preproda
+oracle   11063     1  0  2020 ?        00:08:40   ora_w002_preproda
+oracle   14791     1  0  2020 ?        00:08:42   ora_w004_preproda
+root     17058     1  0 Jan13 ?        00:00:09   node server_ssl2.js
+root     17330     1  0 Jan13 tty1     00:00:00   /sbin/agetty --noclear tty1 linux
+oracle   21634     1  0 Mar08 ?        00:00:41   ora_j000_preproda
+oracle   13525     1  0 May19 ?        00:03:02   ora_w005_preproda
+oracle    5761     1  0 May26 ?        00:02:49   ora_w007_preproda
+root     28393     1  0 Jul08 ?        00:04:24   /usr/sbin/sshd -D
+root     28434 28393  0 Jul28 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28441 28434  0 Jul28 ?        00:00:00       sshd: operaciones@pts/0
+operaci+ 28443 28441  0 Jul28 pts/0    00:00:00         -bash
+root     28982 28443  0 Jul28 pts/0    00:00:00           su - oracle
+oracle   28988 28982  0 Jul28 pts/0    00:00:00             -bash
+oracle   29065 28988  0 Jul28 pts/0    00:00:00               sqlplus
+oracle   29068 29065  0 Jul28 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     28438 28393  0 Jul28 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28454 28438  0 Jul28 ?        00:00:00       sshd: operaciones@notty
+operaci+ 28463 28454  0 Jul28 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     22161 28393  0 Jul30 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 22169 22161  0 Jul30 ?        00:00:00       sshd: operaciones@pts/1
+operaci+ 22172 22169  0 Jul30 pts/1    00:00:00         -bash
+root     22164 28393  0 Jul30 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 22170 22164  0 Jul30 ?        00:00:00       sshd: operaciones@notty
+operaci+ 22171 22170  0 Jul30 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     24188 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 24200 24188  0 Aug03 ?        00:00:00       sshd: operaciones@pts/3
+operaci+ 24203 24200  0 Aug03 pts/3    00:00:00         -bash
+root     24308 24203  0 Aug03 pts/3    00:00:00           su - oracle
+oracle   24336 24308  0 Aug03 pts/3    00:00:00             -bash
+root     24192 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 24202 24192  0 Aug03 ?        00:00:00       sshd: operaciones@notty
+operaci+ 24216 24202  0 Aug03 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     25323 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 25330 25323  0 Aug03 ?        00:00:14       sshd: operaciones@pts/2
+operaci+ 25331 25330  0 Aug03 pts/2    00:00:00         -bash
+root     25980 25331  0 Aug03 pts/2    00:00:00           su - oracle
+oracle   26005 25980  0 Aug03 pts/2    00:00:00             -bash
+oracle   26191 26005  0 Aug03 pts/2    00:00:00               sqlplus   as sysdba
+oracle   26192 26191  0 Aug03 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle   12185 26191  0 Aug03 pts/2    00:00:21                 /bin/bash
+oracle   13564 12185  0 Aug03 pts/2    00:00:00                   sqlplus   as sysdba
+oracle   13565 13564  0 Aug03 ?        00:00:00                     oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle   24459 13564  0 Aug03 pts/2    00:00:00                     /bin/bash
+root     25326 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 25383 25326  0 Aug03 ?        00:00:00       sshd: operaciones@notty
+operaci+ 25384 25383  0 Aug03 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     13499 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 13506 13499  0 Aug03 ?        00:00:36       sshd: operaciones@pts/4
+operaci+ 13517 13506  0 Aug03 pts/4    00:00:00         -bash
+root     14059 13517  0 Aug03 pts/4    00:00:00           su - oracle
+oracle   14134 14059  0 Aug03 pts/4    00:00:02             -bash
+oracle   29582 14134  0 Aug03 pts/4    00:00:00               sqlplus   as sysdba
+oracle   29583 29582  0 Aug03 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle   30480 29582  0 Aug03 pts/4    00:00:00                 /bin/bash
+oracle   10909 30480  0 Aug03 pts/4    00:00:00                   sqlplus   as sysdba
+oracle   10910 10909  0 Aug03 ?        00:00:00                     oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle   26619 10909  0 Aug03 pts/4    00:00:00                     /bin/bash
+oracle   18034 26619  0 Aug03 pts/4    00:00:00                       sqlplus   as sysdba
+oracle   18035 18034  0 Aug03 ?        00:00:00                         oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle    3484 18034  0 Aug03 pts/4    00:00:00                         /bin/bash
+root     13502 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 13967 13502  0 Aug03 ?        00:00:00       sshd: operaciones@notty
+operaci+ 13973 13967  0 Aug03 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     20398 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 20418 20398  0 Aug03 ?        00:00:00       sshd: operaciones@pts/5
+operaci+ 20424 20418  0 Aug03 pts/5    00:00:00         -bash
+root     20836 20424  0 Aug03 pts/5    00:00:00           su oracle
+oracle   20883 20836  0 Aug03 pts/5    00:00:00             bash
+root     20410 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 20441 20410  0 Aug03 ?        00:00:00       sshd: operaciones@notty
+operaci+ 20442 20441  0 Aug03 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      9253 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+  9259  9253  0 Aug03 ?        00:00:00       sshd: operaciones@pts/6
+operaci+  9288  9259  0 Aug03 pts/6    00:00:00         -bash
+root      9528  9288  0 Aug03 pts/6    00:00:00           su - oracle
+oracle    9595  9528  0 Aug03 pts/6    00:00:00             -bash
+root      9256 28393  0 Aug03 ?        00:00:00     sshd: operaciones [priv]
+operaci+  9268  9256  0 Aug03 ?        00:00:00       sshd: operaciones@notty
+operaci+  9269  9268  0 Aug03 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      7111 28393  0 Aug04 ?        00:00:00     sshd: operaciones [priv]
+operaci+  7123  7111  0 Aug04 ?        00:00:00       sshd: operaciones@pts/7
+operaci+  7128  7123  0 Aug04 pts/7    00:00:00         -bash
+root      7210  7128  0 Aug04 pts/7    00:00:00           su - oracle
+oracle    7235  7210  0 Aug04 pts/7    00:00:00             -bash
+root      7120 28393  0 Aug04 ?        00:00:00     sshd: operaciones [priv]
+operaci+  7127  7120  0 Aug04 ?        00:00:00       sshd: operaciones@notty
+operaci+  7141  7127  0 Aug04 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      3110 28393  0 Aug04 ?        00:00:00     sshd: operaciones [priv]
+operaci+  3125  3110  0 Aug04 ?        00:00:00       sshd: operaciones@notty
+operaci+  3149  3125  0 Aug04 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     25818 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 25842 25818  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 25845 25842  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     26576 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 26582 26576  0 Aug05 ?        00:00:00       sshd: operaciones@pts/9
+operaci+ 26583 26582  0 Aug05 pts/9    00:00:00         -bash
+root     26640 26583  0 Aug05 pts/9    00:00:00           su - oracle
+oracle   26664 26640  0 Aug05 pts/9    00:00:00             -bash
+root     26579 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 26623 26579  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 26625 26623  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     27901 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 27910 27901  0 Aug05 ?        00:00:00       sshd: operaciones@pts/10
+operaci+ 27912 27910  0 Aug05 pts/10   00:00:00         -bash
+root     28008 27912  0 Aug05 pts/10   00:00:00           su - oracle
+oracle   28016 28008  0 Aug05 pts/10   00:00:00             -bash
+root     27908 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 27946 27908  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 27956 27946  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     28789 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28795 28789  0 Aug05 ?        00:00:00       sshd: operaciones@pts/11
+operaci+ 28796 28795  0 Aug05 pts/11   00:00:00         -bash
+root     28862 28796  0 Aug05 pts/11   00:00:00           su - oracle
+oracle   28870 28862  0 Aug05 pts/11   00:00:00             -bash
+oracle   28948 28870  0 Aug05 pts/11   00:00:00               sqlplus   as sysdba
+oracle   28949 28948  0 Aug05 ?        00:00:01                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     28792 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28840 28792  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 28841 28840  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      1921 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+  1928  1921  0 Aug05 ?        00:00:00       sshd: operaciones@pts/8
+operaci+  1929  1928  0 Aug05 pts/8    00:00:00         -bash
+root      2008  1929  0 Aug05 pts/8    00:00:00           su - oracle
+oracle    2026  2008  0 Aug05 pts/8    00:00:00             -bash
+root      1924 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+  1968  1924  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+  1983  1968  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     10176 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 10603 10176  0 Aug05 ?        00:00:00       sshd: operaciones@pts/12
+operaci+ 10606 10603  0 Aug05 pts/12   00:00:00         -bash
+root     10740 10606  0 Aug05 pts/12   00:00:00           su - oracle
+oracle   10749 10740  0 Aug05 pts/12   00:00:00             -bash
+root     10605 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 10663 10605  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 10668 10663  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     11614 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 11625 11614  0 Aug05 ?        00:00:00       sshd: operaciones@pts/13
+operaci+ 11628 11625  0 Aug05 pts/13   00:00:00         -bash
+root     11621 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 11674 11621  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 11675 11674  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     14392 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 14399 14392  0 Aug05 ?        00:00:00       sshd: operaciones@pts/14
+operaci+ 14400 14399  0 Aug05 pts/14   00:00:00         -bash
+root     14501 14400  0 Aug05 pts/14   00:00:00           su - oracle
+oracle   14516 14501  0 Aug05 pts/14   00:00:00             -bash
+root     14396 28393  0 Aug05 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 14444 14396  0 Aug05 ?        00:00:00       sshd: operaciones@notty
+operaci+ 14445 14444  0 Aug05 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     24869 28393  0 Aug06 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 24876 24869  0 Aug06 ?        00:00:00       sshd: operaciones@pts/15
+operaci+ 24877 24876  0 Aug06 pts/15   00:00:00         -bash
+root     17522 28393  0 Aug06 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 17529 17522  0 Aug06 ?        00:00:00       sshd: operaciones@pts/16
+operaci+ 17530 17529  0 Aug06 pts/16   00:00:00         -bash
+root     17597 17530  0 Aug06 pts/16   00:00:00           su - oracle
+oracle   17613 17597  0 Aug06 pts/16   00:00:00             -bash
+oracle   18954 17613  0 Aug06 pts/16   00:00:00               vim /home/oracle/scripts_db/backup_datapump.sh
+root     17525 28393  0 Aug06 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 17551 17525  0 Aug06 ?        00:00:00       sshd: operaciones@notty
+operaci+ 17559 17551  0 Aug06 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     10687 28393  0 Aug07 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 10694 10687  0 Aug07 ?        00:00:06       sshd: operaciones@pts/17
+operaci+ 10695 10694  0 Aug07 pts/17   00:00:00         -bash
+root     10826 10695  0 Aug07 pts/17   00:00:00           su - oracle
+oracle   10859 10826  0 Aug07 pts/17   00:00:00             -bash
+root     10690 28393  0 Aug07 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 10755 10690  0 Aug07 ?        00:00:00       sshd: operaciones@notty
+operaci+ 10760 10755  0 Aug07 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     22628 28393  0 Aug08 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 22635 22628  0 Aug08 ?        00:00:00       sshd: operaciones@pts/18
+operaci+ 22636 22635  0 Aug08 pts/18   00:00:00         -bash
+root     22735 22636  0 Aug08 pts/18   00:00:00           su oracle
+oracle   22765 22735  0 Aug08 pts/18   00:00:00             bash
+root     22859 22765  0 Aug08 pts/18   00:00:00               su - oracle
+oracle   22903 22859  0 Aug08 pts/18   00:00:00                 -bash
+root      9339 28393  0 Aug09 ?        00:00:00     sshd: operaciones [priv]
+operaci+  9345  9339  0 Aug09 ?        00:00:00       sshd: operaciones@pts/19
+operaci+  9346  9345  0 Aug09 pts/19   00:00:00         -bash
+root      9426  9346  0 Aug09 pts/19   00:00:00           su - oracle
+oracle    9439  9426  0 Aug09 pts/19   00:00:00             -bash
+root     15034 28393  0 Aug11 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 15041 15034  0 Aug11 ?        00:00:00       sshd: operaciones@pts/20
+operaci+ 15044 15041  0 Aug11 pts/20   00:00:00         -bash
+root     15611 15044  0 Aug11 pts/20   00:00:00           su - oracle
+oracle   15621 15611  0 Aug11 pts/20   00:00:00             -bash
+root     15037 28393  0 Aug11 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 15042 15037  0 Aug11 ?        00:00:00       sshd: operaciones@notty
+operaci+ 15043 15042  0 Aug11 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     30817 28393  0 Aug12 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 30824 30817  0 Aug12 ?        00:00:00       sshd: operaciones@pts/21
+operaci+ 30827 30824  0 Aug12 pts/21   00:00:00         -bash
+root     30820 28393  0 Aug12 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 30826 30820  0 Aug12 ?        00:00:00       sshd: operaciones@notty
+operaci+ 30835 30826  0 Aug12 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     18257 28393  0 Aug12 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 18265 18257  0 Aug12 ?        00:00:06       sshd: operaciones@pts/22
+operaci+ 18267 18265  0 Aug12 pts/22   00:00:00         -bash
+root     18448 18267  0 Aug12 pts/22   00:00:00           su - oracle
+oracle   18467 18448  0 Aug12 pts/22   00:00:00             -bash
+oracle    6453 18467  0 Aug12 pts/22   00:00:00               sqlplus   as sysdba
+oracle    6454  6453  0 Aug12 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle   30810  6453  0 Aug12 pts/22   00:00:00                 /bin/bash
+oracle    3447 30810  0 Aug12 pts/22   00:00:00                   sqlplus   as sysdba
+oracle   14180  3447  0 Aug12 ?        00:00:00                     oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     18261 28393  0 Aug12 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 18304 18261  0 Aug12 ?        00:00:00       sshd: operaciones@notty
+operaci+ 18312 18304  0 Aug12 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      9522 28393  0 Aug13 ?        00:00:00     sshd: operaciones [priv]
+operaci+  9561  9522  0 Aug13 ?        00:00:00       sshd: operaciones@notty
+operaci+  9570  9561  0 Aug13 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     23318 28393  0 Aug15 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 23339 23318  0 Aug15 ?        00:00:00       sshd: operaciones@pts/23
+operaci+ 23341 23339  0 Aug15 pts/23   00:00:00         -bash
+root      1832 28393  0 Aug17 ?        00:00:00     sshd: operaciones [priv]
+operaci+  1842  1832  0 Aug17 ?        00:00:00       sshd: operaciones@pts/24
+operaci+  1844  1842  0 Aug17 pts/24   00:00:00         -bash
+root      2022  1844  0 Aug17 pts/24   00:00:00           su - oracle
+oracle    2051  2022  0 Aug17 pts/24   00:00:00             -bash
+root      1838 28393  0 Aug17 ?        00:00:00     sshd: operaciones [priv]
+operaci+  1888  1838  0 Aug17 ?        00:00:00       sshd: operaciones@notty
+operaci+  1901  1888  0 Aug17 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     28470 28393  0 Aug19 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28478 28470  0 Aug19 ?        00:00:00       sshd: operaciones@pts/25
+operaci+ 28479 28478  0 Aug19 pts/25   00:00:00         -bash
+root     28545 28479  0 Aug19 pts/25   00:00:00           su - oracle
+oracle   28553 28545  0 Aug19 pts/25   00:00:00             -bash
+root     32764 28393  0 Aug19 ?        00:00:00     sshd: operaciones [priv]
+operaci+   326 32764  0 Aug19 ?        00:00:00       sshd: operaciones@pts/26
+operaci+   328   326  0 Aug19 pts/26   00:00:00         -bash
+root       404   328  0 Aug19 pts/26   00:00:00           su - oracle
+oracle     420   404  0 Aug19 pts/26   00:00:00             -bash
+oracle    1490   420  0 Aug19 pts/26   00:00:00               sqlplus   as sysdba
+oracle    1491  1490  0 Aug19 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root       306 28393  0 Aug19 ?        00:00:00     sshd: operaciones [priv]
+operaci+   348   306  0 Aug19 ?        00:00:00       sshd: operaciones@notty
+operaci+   350   348  0 Aug19 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      6932 28393  0 Aug19 ?        00:00:00     sshd: operaciones [priv]
+operaci+  6949  6932  0 Aug19 ?        00:00:00       sshd: operaciones@pts/28
+operaci+  6950  6949  0 Aug19 pts/28   00:00:00         -bash
+root      6996  6950  0 Aug19 pts/28   00:00:00           su - oracle
+oracle    7002  6996  0 Aug19 pts/28   00:00:00             -bash
+root     15187 28393  0 Aug19 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 15191 15187  0 Aug19 ?        00:00:00       sshd: operaciones@pts/29
+operaci+ 15192 15191  0 Aug19 pts/29   00:00:00         -bash
+root     15236 15192  0 Aug19 pts/29   00:00:00           su - oracle
+oracle   15244 15236  0 Aug19 pts/29   00:00:00             -bash
+root     20628 28393  0 Aug20 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 20633 20628  0 Aug20 ?        00:00:00       sshd: operaciones@pts/27
+operaci+ 20634 20633  0 Aug20 pts/27   00:00:00         -bash
+root     29965 28393  0 Aug24 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 29974 29965  0 Aug24 ?        00:00:00       sshd: operaciones@pts/30
+operaci+ 29976 29974  0 Aug24 pts/30   00:00:00         -bash
+root     30039 29976  0 Aug24 pts/30   00:00:00           su - oracle
+oracle   30060 30039  0 Aug24 pts/30   00:00:00             -bash
+oracle   30147 30060  0 Aug24 pts/30   00:00:00               sqlplus   as sysdba
+oracle   30148 30147  0 Aug24 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     29968 28393  0 Aug24 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 29989 29968  0 Aug24 ?        00:00:00       sshd: operaciones@notty
+operaci+ 29997 29989  0 Aug24 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     29118 28393  0 Aug25 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 29130 29118  0 Aug25 ?        00:00:00       sshd: operaciones@pts/31
+operaci+ 29136 29130  0 Aug25 pts/31   00:00:00         -bash
+root     29195 29136  0 Aug25 pts/31   00:00:00           su - oracle
+oracle   29202 29195  0 Aug25 pts/31   00:00:00             -bash
+oracle   29702 29202  0 Aug25 pts/31   00:00:00               sqlplus   as sysdba
+oracle   31828 29702  0 Aug25 ?        00:00:00                 oraclepreproda (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     29125 28393  0 Aug25 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 29135 29125  0 Aug25 ?        00:00:00       sshd: operaciones@notty
+operaci+ 29149 29135  0 Aug25 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     23496 28393  0 Sep02 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 23503 23496  0 Sep02 ?        00:00:00       sshd: operaciones@pts/32
+operaci+ 23504 23503  0 Sep02 pts/32   00:00:00         -bash
+root     23582 23504  0 Sep02 pts/32   00:00:00           su - oracle
+oracle   23590 23582  0 Sep02 pts/32   00:00:00             -bash
+root     23500 28393  0 Sep02 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 23532 23500  0 Sep02 ?        00:00:00       sshd: operaciones@notty
+operaci+ 23542 23532  0 Sep02 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root      6150 28393  0 Sep02 ?        00:00:00     sshd: operaciones [priv]
+operaci+  6156  6150  0 Sep02 ?        00:00:00       sshd: operaciones@pts/33
+operaci+  6157  6156  0 Sep02 pts/33   00:00:00         -bash
+root      6221  6157  0 Sep02 pts/33   00:00:00           su - oracle
+oracle    6233  6221  0 Sep02 pts/33   00:00:00             -bash
+root      6153 28393  0 Sep02 ?        00:00:00     sshd: operaciones [priv]
+operaci+  6203  6153  0 Sep02 ?        00:00:00       sshd: operaciones@notty
+operaci+  6204  6203  0 Sep02 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     16156 28393  0 Sep08 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 16161 16156  0 Sep08 ?        00:00:00       sshd: operaciones@notty
+operaci+ 16163 16161  0 Sep08 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     15229 28393  0 Sep09 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 15239 15229  0 Sep09 ?        00:00:00       sshd: operaciones@pts/34
+operaci+ 15241 15239  0 Sep09 pts/34   00:00:00         -bash
+root     15404 15241  0 Sep09 pts/34   00:00:00           su - oracle
+oracle   15432 15404  0 Sep09 pts/34   00:00:00             -bash
+root     15233 28393  0 Sep09 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 15282 15233  0 Sep09 ?        00:00:00       sshd: operaciones@notty
+operaci+ 15292 15282  0 Sep09 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     28976 28393  0 Sep11 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 28984 28976  0 Sep11 ?        00:00:00       sshd: operaciones@pts/35
+operaci+ 28985 28984  0 Sep11 pts/35   00:00:00         -bash
+root     29049 28985  0 Sep11 pts/35   00:00:00           su - oracle
+oracle   29060 29049  0 Sep11 pts/35   00:00:00             -bash
+root     28979 28393  0 Sep11 ?        00:00:00     sshd: operaciones [priv]
+operaci+ 29004 28979  0 Sep11 ?        00:00:00       sshd: operaciones@notty
+operaci+ 29007 29004  0 Sep11 ?        00:00:00         /usr/libexec/openssh/sftp-server
+root     20531 28393  0 23:37 ?        00:00:00     sshd: opc [priv]
+opc      20961 20531  0 23:37 ?        00:00:00       sshd: opc@pts/36
+opc      20962 20961  0 23:37 pts/36   00:00:00         -bash
+root     21011 20962  0 23:37 pts/36   00:00:00           sudo su -
+root     21013 21011  0 23:37 pts/36   00:00:00             su -
+root     21014 21013  0 23:37 pts/36   00:00:00               -bash
+root     24093 21014  0 23:50 pts/36   00:00:00                 sh sysinfo.sh -c examples/template_oracle_db
+root     24102 24093  0 23:50 pts/36   00:00:00                   /bin/bash //root/automaticRep/linux-sysinfo-master/executable
+root     24157 24102  0 23:50 pts/36   00:00:00                     ps -eHf
+oracle   22251     1  0 Jul09 ?        00:01:46   ora_w003_preproda
+oracle   15526     1  0 Jul12 ?        00:01:42   ora_w001_preproda
+oracle    7868     1  0 Jul16 ?        00:01:35   ora_w006_preproda
+nrpe      8367     1  0 Aug04 ?        00:01:33   /usr/sbin/nrpe -c /etc/nagios/nrpe.cfg -f
+oracle    7826     1  0 Aug19 pts/28   02:34:40   /u01/Midd/jdk1.8.0_231/bin/java -Djava.util.logging.config.file=/u01/Midd/Tomcat9/apache-tomcat-9.0.1/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -classpath /u01/Midd/Tomcat9/apache-tomcat-9.0.1/bin/bootstrap.jar:/u01/Midd/Tomcat9/apache-tomcat-9.0.1/bin/tomcat-juli.jar -Dcatalina.base=/u01/Midd/Tomcat9/apache-tomcat-9.0.1 -Dcatalina.home=/u01/Midd/Tomcat9/apache-tomcat-9.0.1 -Djava.io.tmpdir=/u01/Midd/Tomcat9/apache-tomcat-9.0.1/temp org.apache.catalina.startup.Bootstrap start
+oracle   13953     1  0 Sep05 ?        00:00:10   ora_q001_preproda
+oracle    8698     1  0 18:51 ?        00:00:00   oraclepreproda (LOCAL=NO)
+oracle   15287     1  0 21:17 ?        00:00:37   oraclepreproda (LOCAL=NO)
+oracle   28736     1  0 22:07 ?        00:00:00   oraclepreproda (LOCAL=NO)
+oracle   19795     1  0 23:34 ?        00:00:00   ora_j001_preproda
+oracle   19797     1  0 23:34 ?        00:00:00   ora_j002_preproda
+oracle   22499     1  0 23:43 ?        00:00:00   oraclepreproda (LOCAL=NO)
+oracle   22501     1  0 23:43 ?        00:00:00   oraclepreproda (LOCAL=NO)
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">Running Services</a><ul><li><PRE>
+   Active: active (running) since Thu 2020-10-22 05:44:30 CDT; 10 months 22 days ago
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">TCP Connections</a><ul><li><PRE>
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:11015           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1/systemd           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      28393/sshd          
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1989/master         
+tcp        0      0 0.0.0.0:5666            0.0.0.0:*               LISTEN      8367/nrpe           
+tcp        0      0 127.0.0.1:50880         127.0.0.1:1521          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:50884         127.0.0.1:1521          TIME_WAIT   -                   
+tcp        0      0 192.168.1.41:22         192.168.1.249:63092     ESTABLISHED 1838/sshd: operacio 
+tcp        0      0 192.168.1.41:53520      192.168.1.41:1521       ESTABLISHED 4434/ora_lreg_prepr 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51403     ESTABLISHED 9256/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51390     ESTABLISHED 29118/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:50814     ESTABLISHED 14396/sshd: operaci 
+tcp        0      0 189.206.1.170:22        189.217.25.236:5535     ESTABLISHED 20628/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:61759     ESTABLISHED 28976/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:50787     ESTABLISHED 22164/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:64840     ESTABLISHED 29965/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:53014     ESTABLISHED 23496/sshd: operaci 
+tcp        0      0 127.0.0.1:50882         127.0.0.1:1521          TIME_WAIT   -                   
+tcp        0      0 192.168.1.41:22         192.168.1.249:65281     ESTABLISHED 7120/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:54372     ESTABLISHED 11621/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:60780     ESTABLISHED 1924/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:54929     ESTABLISHED 15037/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:65165     ESTABLISHED 3110/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:64842     ESTABLISHED 9339/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:61760     ESTABLISHED 28979/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:65523     ESTABLISHED 30820/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:61890     ESTABLISHED 18261/sshd: operaci 
+tcp        0      0 189.206.1.170:49248     142.250.138.109:587     ESTABLISHED 21634/ora_j000_prep 
+tcp        0      0 192.168.1.41:22         192.168.1.249:57488     ESTABLISHED 20398/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:61889     ESTABLISHED 18257/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59057     ESTABLISHED 6153/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59980     ESTABLISHED 24869/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:57199     ESTABLISHED 10605/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:54512     ESTABLISHED 26579/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59206     ESTABLISHED 326/sshd: operacion 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59684     ESTABLISHED 25323/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:53015     ESTABLISHED 23500/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:54928     ESTABLISHED 15034/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:64495     ESTABLISHED 25818/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51392     ESTABLISHED 29125/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51303     ESTABLISHED 306/sshd: operacion 
+tcp        0      0 192.168.1.41:22         192.168.1.249:62028     ESTABLISHED 10687/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:53478     ESTABLISHED 16156/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:60943     ESTABLISHED 7111/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51732     ESTABLISHED 13502/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:64158     ESTABLISHED 26576/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:52019     ESTABLISHED 24192/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59575     ESTABLISHED 28434/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:49631     ESTABLISHED 22628/sshd: operaci 
+tcp        0      0 189.206.1.170:22        189.217.25.236:27210    ESTABLISHED 28470/sshd: operaci 
+tcp        0      0 192.168.1.41:999        192.168.2.67:2049       ESTABLISHED -                   
+tcp        0      0 192.168.1.41:22         192.168.1.249:57504     ESTABLISHED 20410/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:49366     ESTABLISHED 29968/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51831     ESTABLISHED 27908/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:65463     ESTABLISHED 15229/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:65464     ESTABLISHED 15233/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:65522     ESTABLISHED 30817/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:58120     ESTABLISHED 17522/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:55687     ESTABLISHED 11614/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59056     ESTABLISHED 6150/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59685     ESTABLISHED 25326/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:50813     ESTABLISHED 14392/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:56893     ESTABLISHED 9522/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:57972     ESTABLISHED 28792/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:58121     ESTABLISHED 17525/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.23:43443      ESTABLISHED 20531/sshd: opc [pr 
+tcp        0      0 192.168.1.41:22         192.168.1.249:59576     ESTABLISHED 28438/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:57198     ESTABLISHED 10176/sshd: operaci 
+tcp        0      0 189.206.1.170:22        189.217.25.236:27509    ESTABLISHED 6932/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51830     ESTABLISHED 27901/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:51402     ESTABLISHED 9253/sshd: operacio 
+tcp        0      0 189.206.1.170:22        189.217.25.236:38037    ESTABLISHED 23318/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:57969     ESTABLISHED 28789/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:60779     ESTABLISHED 1921/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:54839     ESTABLISHED 13499/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:52017     ESTABLISHED 24188/sshd: operaci 
+tcp        0      0 189.206.1.170:22        189.217.25.236:29069    ESTABLISHED 15187/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:62029     ESTABLISHED 10690/sshd: operaci 
+tcp        0      0 192.168.1.41:22         192.168.1.249:63091     ESTABLISHED 1832/sshd: operacio 
+tcp        0      0 192.168.1.41:22         192.168.1.249:50786     ESTABLISHED 22161/sshd: operaci 
+tcp6       0      0 127.0.0.1:8005          :::*                    LISTEN      7826/java           
+tcp6       0      0 :::8009                 :::*                    LISTEN      7826/java           
+tcp6       0      0 :::111                  :::*                    LISTEN      1/systemd           
+tcp6       0      0 :::8080                 :::*                    LISTEN      7826/java           
+tcp6       0      0 :::1521                 :::*                    LISTEN      4848/tnslsnr        
+tcp6       0      0 :::22                   :::*                    LISTEN      28393/sshd          
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1989/master         
+tcp6       0      0 :::8443                 :::*                    LISTEN      7826/java           
+tcp6       0      0 :::5500                 :::*                    LISTEN      4848/tnslsnr        
+tcp6       0      0 :::19613                :::*                    LISTEN      4442/ora_d000_prepr 
+tcp6       0      0 :::28735                :::*                    LISTEN      -                   
+tcp6       0      0 :::5666                 :::*                    LISTEN      8367/nrpe           
+tcp6       0      0 :::1347                 :::*                    LISTEN      17058/node          
+tcp6       0      0 192.168.1.41:33710      192.168.1.41:1521       ESTABLISHED 7826/java           
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:33710      ESTABLISHED 22501/oraclepreprod 
+tcp6       0      0 192.168.1.41:33708      192.168.1.41:1521       ESTABLISHED 7826/java           
+tcp6       0      0 192.168.1.41:8080       192.168.1.41:56992      TIME_WAIT   -                   
+tcp6       0      0 192.168.1.41:8080       192.168.1.41:56994      TIME_WAIT   -                   
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:33708      ESTABLISHED 22499/oraclepreprod 
+tcp6       0      0 192.168.1.41:31818      192.168.1.41:1521       ESTABLISHED 7826/java           
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:30850      ESTABLISHED 15287/oraclepreprod 
+tcp6       0      0 192.168.1.41:30850      192.168.1.41:1521       ESTABLISHED 7826/java           
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:31818      ESTABLISHED 28736/oraclepreprod 
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:53520      ESTABLISHED 4848/tnslsnr        
+tcp6       0      0 192.168.1.41:27970      192.168.1.41:1521       ESTABLISHED 7826/java           
+tcp6       0      0 192.168.1.41:1521       192.168.1.41:27970      ESTABLISHED 8698/oraclepreproda 
+tcp6       0      0 189.206.1.170:8443      66.249.65.185:40158     TIME_WAIT   -                   
+tcp6       0      0 189.206.1.170:8443      66.249.65.183:35443     TIME_WAIT   -                   
+</PRE></li></ul>
+<li><a href="#" onclick="toggleBullet(this)">TCP Statistics</a><ul><li><PRE>
+IcmpMsg:
+    InType0: 153
+    InType3: 25281
+    InType8: 1163017
+    InType11: 1053
+    InType13: 20
+    OutType0: 1163017
+    OutType3: 4829995
+    OutType8: 43
+    OutType14: 20
+Tcp:
+    3607125 active connections openings
+    5826286 passive connection openings
+    1933403 failed connection attempts
+    217962 connection resets received
+    83 connections established
+    564582261 segments received
+    1157834384 segments send out
+    10882248 segments retransmited
+    275 bad segments received.
+    2182987 resets sent
+UdpLite:
+TcpExt:
+    4932 SYN cookies sent
+    4546 SYN cookies received
+    2575 invalid SYN cookies received
+    47868 resets received for embryonic SYN_RECV sockets
+</PRE></li></ul>
+</ul></li>
+</ul></DIV></BODY></HTML>
