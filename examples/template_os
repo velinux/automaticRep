@@ -6,12 +6,16 @@ sub_start "CPU"
 run_command "cat /proc/cpuinfo"
 sub_end
 
+sub_start "Contador CPU"
+run_command "cat /proc/cpuinfo | grep processor | wc -l"
+sub_end
+
 sub_start "Ethernet"
 run_command "lspci | grep Ethernet"
 sub_end
 
 sub_start "Interface"
-ifconfig | grep 'eth\|eno\|enp0s\|lo' | cut -c1-4 >interfaces.tmp
+ifconfig | grep 'eth\|eno\|enp0s\|br\|bond\|lo' | cut -c1-4 >interfaces.tmp
 while read line
 do
 run_command "ethtool $line "
@@ -39,6 +43,10 @@ sub_start "Release"
 run_command "cat /etc/os-release"
 sub_end
 
+sub_start "SELinux Status"
+run_command "sestatus"
+sub_end
+
 sub_start "Memory"
 run_command "memory=`free -m | grep Mem | awk '{print $2}'` ; echo "Memory: \$memory";swap=`free -m | grep Swap | awk '{print $2}'`;echo "Swap: \$swap""
 sub_end
@@ -53,10 +61,6 @@ sub_end
 
 sub_start "File Limits General Conf"
 run_command "cat /etc/security/limits.conf"
-sub_end
-
-sub_start "Limits for ORACLE User"
-run_command "ulimit -a -u oracle"
 sub_end
 
 sub_start "Usuarios del Sistema"
@@ -77,6 +81,10 @@ sub_end
 
 sub_start "Kernel Parameters"
 run_command "cat /etc/sysctl.conf"
+sub_end
+
+sub_start "Firewall"
+run_command "firewall-cmd --list-all"
 sub_end
 
 heading_end
