@@ -132,11 +132,11 @@ heading_end
 ![Example Screenshot](https://imgur.com/qMEIGtp)
 
 #### This a example to a DB Report
-```
+
 ![Example DB Screenshot](https://imgur.com/fNJtJIQ)
 
 #### This a example to a OS Report
-```
+
 ![Example OS Screenshot](https://imgur.com/kjKMxDf)
 
 #### This script also supports more complicated commands (see below)
