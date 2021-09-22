@@ -1,3 +1,7 @@
+The original script has been modified in which only general data is extracted from the operating system, in this version some data is collected more divided by layer, without losing the original style or need. (by VeLinux).
+
+XaaS CIS.
+
 #### How to run command:
 ```  
 sysinfo.sh -c cmd_list -o output.html
@@ -10,20 +14,22 @@ sysinfo.sh -c cmd_list -o output.html
 
 > example to oracle database extract report
 
+>Into folder automaticRep
+
 ```  
-sysinfo.sh -c examples/template_oracle_db -o Sysinfo_$(hostname)_to_Migrate_db_Report.html
+sh sysinfo.sh -c examples/template_oracle_db -o /tmp/Sysinfo_$(hostname)_to_Migrate_db_Report.html
 ```
 
 > example to oracle app extract report
 
 ```  
-sysinfo.sh -c examples/template_oracle_app -o Sysinfo_$(hostname)_to_Migrate_app_Report.html
+sysinfo.sh -c examples/template_oracle_app -o /tmp/Sysinfo_$(hostname)_to_Migrate_app_Report.html
 ```
 
 > example to operative system  extract report
 
 ```  
-sysinfo.sh -c examples/template_oracle_db -o Sysinfo_$(hostname)_to_Migrate_os_Report.html
+sysinfo.sh -c examples/template_os -o /tmp/Sysinfo_$(hostname)_to_Migrate_os_Report.html
 ```
 
 #### Setup command template:
