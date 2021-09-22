@@ -2,6 +2,18 @@ The original script has been modified in which only general data is extracted fr
 
 XaaS CIS.
 
+Original Autor Templates:
+> ├── examples
+│   ├── commands_list1
+│   ├── commands_list2
+│   ├── example.html
+
+> Aditional VeLinux Templates:
+
+│   ├── template_oracle_app
+│   ├── template_oracle_db
+│   └── template_os
+
 #### How to run command:
 ```  
 sysinfo.sh -c cmd_list -o output.html
@@ -23,13 +35,13 @@ sh sysinfo.sh -c examples/template_oracle_db -o /tmp/Sysinfo_$(hostname)_to_Migr
 > example to oracle app extract report
 
 ```  
-sysinfo.sh -c examples/template_oracle_app -o /tmp/Sysinfo_$(hostname)_to_Migrate_app_Report.html
+sh sysinfo.sh -c examples/template_oracle_app -o /tmp/Sysinfo_$(hostname)_to_Migrate_app_Report.html
 ```
 
 > example to operative system  extract report
 
 ```  
-sysinfo.sh -c examples/template_os -o /tmp/Sysinfo_$(hostname)_to_Migrate_os_Report.html
+sh sysinfo.sh -c examples/template_os -o /tmp/Sysinfo_$(hostname)_to_Migrate_os_Report.html
 ```
 
 #### Setup command template:
@@ -91,7 +103,7 @@ heading_end
 > NB: indention is not required, just makes it look nicer
 
 HTML output:
-![Example Screenshot](http://i.imgur.com/3gB42Ts.png)
+![Example Screenshot](https://i.imgur.com/cWozQTG.png)
 
 You can also create nested sub headings 
 ```bash
@@ -117,7 +129,15 @@ heading_start "Example Heading"
 
 heading_end
 ```
-![Example Screenshot](http://i.imgur.com/PchzWeb.png)
+![Example Screenshot](https://imgur.com/qMEIGtp)
+
+#### This a example to a DB Report
+```
+![Example DB Screenshot](https://imgur.com/fNJtJIQ)
+
+#### This a example to a OS Report
+```
+![Example OS Screenshot](https://imgur.com/kjKMxDf)
 
 #### This script also supports more complicated commands (see below)
 
