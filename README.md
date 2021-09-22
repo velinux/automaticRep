@@ -1,3 +1,4 @@
+## Nuevo Cambio
 The original script has been modified in which only general data is extracted from the operating system, in this version some data is collected more divided by layer, without losing the original style or need. (by VeLinux).
 
 XaaS CIS.
