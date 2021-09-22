@@ -166,3 +166,7 @@ sub_start "Loop Example"
   done
 sub_end
 ```
+###### Note by Second Rebuilder code:
+```bash
+I would like us to collaborate and this code improves much more, the purpose can help us all. 
+```
