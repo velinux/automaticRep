@@ -129,15 +129,14 @@ heading_start "Example Heading"
 
 heading_end
 ```
-![Example Screenshot](https://imgur.com/qMEIGtp)
+HTML output:
+![Example Screenshot](https://i.imgur.com/qMEIGtp.png)
 
-#### This a example to a DB Report
+HTML DB output:
+![Example DB Screenshot](https://i.imgur.com/fNJtJIQ.png)
 
-![Example DB Screenshot](https://imgur.com/fNJtJIQ)
-
-#### This a example to a OS Report
-
-![Example OS Screenshot](https://imgur.com/kjKMxDf)
+HTML OS output:
+![Example OS Screenshot](https://i.imgur.com/kjKMxDf.png)
 
 #### This script also supports more complicated commands (see below)
 
