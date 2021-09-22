@@ -27,11 +27,11 @@ _config.yml  examples  executable  functions  LICENSE  README.md  sh  sysinfo.ht
 ```
 
 #### How to manual download:
+
+![Example Screenshot](https://i.imgur.com/fnL9VQO.png)
+
 ```
->![Example Screenshot](https://i.imgur.com/fnL9VQO.png)
-
 >wget https://github.com/velinux/automaticRep/archive/refs/heads/main.zip
-
 ```
 
 #### How to run command:
