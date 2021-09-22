@@ -14,6 +14,18 @@ Original Autor Templates:
 │   ├── template_oracle_db
 │   └── template_os
 
+#### GIT CLONE:
+```
+>yum install git 
+
+>git clone https://github.com/velinux/automaticRep
+
+>cd automaticRep
+
+>ls 
+_config.yml  examples  executable  functions  LICENSE  README.md  sh  sysinfo.html  sysinfo.sh  vars
+```
+
 #### How to run command:
 ```  
 sysinfo.sh -c cmd_list -o output.html
