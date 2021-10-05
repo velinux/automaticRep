@@ -49,19 +49,19 @@ sysinfo.sh -c cmd_list -o output.html
 >Into folder automaticRep
 
 ```  
-sh sysinfo.sh -c examples/template_oracle_db -o /tmp/Sysinfo_$(hostname)_to_Migrate_db_Report.html
+sh sysinfo.sh -c examples/template_oracle_db -o /tmp/Sysinfo_$(hostname)_to_Migrate_db_Report_$(date +%d%m%Y_%H_%M).html
 ```
 
 > example to oracle app extract report
 
 ```  
-sh sysinfo.sh -c examples/template_oracle_app -o /tmp/Sysinfo_$(hostname)_to_Migrate_app_Report.html
+sh sysinfo.sh -c examples/template_oracle_app -o /tmp/Sysinfo_$(hostname)_to_Migrate_app_Report_$(date +%d%m%Y_%H_%M).html
 ```
 
 > example to operative system  extract report
 
 ```  
-sh sysinfo.sh -c examples/template_os -o /tmp/Sysinfo_$(hostname)_to_Migrate_os_Report.html
+sh sysinfo.sh -c examples/template_os -o /tmp/Sysinfo_$(hostname)_to_Migrate_os_Report_$(date +%d%m%Y_%H_%M).html
 ```
 
 #### Setup command template:
