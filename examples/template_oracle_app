@@ -88,6 +88,14 @@ sub_start "APP Context File"
 run_command "cat \$CONTEXT_FILE | grep url"
 sub_end
 
+sub_start "Root FS Owners"
+run_command "ls -lrta /"
+sub_end
+
+sub_start "App Root Owners"
+run_command "sh sh/ownerapp.sh; cat /tmp/ownerapp.log"
+sub_end
+
 heading_end
 
 heading_start "Network Config"
