@@ -31,7 +31,7 @@ _config.yml  examples  executable  functions  LICENSE  README.md  sh  sysinfo.ht
 ![Example Screenshot](https://i.imgur.com/fnL9VQO.png)
 
 ```
->wget https://github.com/velinux/automaticRep/archive/refs/heads/main.zip
+>wget https://github.com/velinux/automaticRep/archive/refs/heads/main.zip -O automaticRep.zip
 ```
 
 #### How to run command:
